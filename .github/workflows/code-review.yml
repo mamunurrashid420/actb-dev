@@ -41,9 +41,9 @@ jobs:
       - name: Install Python dependencies
         run: uv sync --all-packages
 
-      # Lint all workspaces that have a "lint" script
+      # Lint web app packages that have lint (skip third_party & web/shared)
       - name: Lint
-        run: pnpm -r run lint
+        run: pnpm --filter '@actbi/admin' --filter '@actbi/bi' --filter '@actbi/chartviz' --filter '@actbi/xms' run lint
 
       # Test – just test (Python + JS) on every PR and push to main/develop
       - name: Test

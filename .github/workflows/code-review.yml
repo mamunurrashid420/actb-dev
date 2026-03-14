@@ -43,7 +43,7 @@ jobs:
 
       # Lint all workspaces that have a "lint" script
       - name: Lint
-        run: pnpm -r run lint --if-present
+        run: pnpm -r run lint
 
       # Test – just test (Python + JS) on every PR and push to main/develop
       - name: Test

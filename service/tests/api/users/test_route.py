@@ -4,6 +4,8 @@ from unittest.mock import AsyncMock, MagicMock
 
 from fastapi.testclient import TestClient
 
+from src.app.api.users.service import UserService
+
 
 def _profile() -> dict:
     return {
@@ -24,8 +26,6 @@ def _profile() -> dict:
 
 
 def test_get_current_user_info(client: TestClient):
-    from src.app.api.users.route import UserService as RouteUserService
-
     mock_service = MagicMock()
     mock_service.get_current_user_info = AsyncMock(
         return_value={
@@ -34,7 +34,7 @@ def test_get_current_user_info(client: TestClient):
             "created_at": "2024-01-01T00:00:00Z",
         }
     )
-    client.app.dependency_overrides[RouteUserService] = lambda: mock_service
+    client.app.dependency_overrides[UserService] = lambda: mock_service
 
     response = client.get("/users/me")
 
@@ -45,11 +45,9 @@ def test_get_current_user_info(client: TestClient):
 
 
 def test_get_my_profile_not_found(client: TestClient):
-    from src.app.api.users.route import UserService as RouteUserService
-
     mock_service = MagicMock()
     mock_service.get_profile_self = AsyncMock(return_value=None)
-    client.app.dependency_overrides[RouteUserService] = lambda: mock_service
+    client.app.dependency_overrides[UserService] = lambda: mock_service
 
     response = client.get("/users/me/profile")
 
@@ -58,11 +56,9 @@ def test_get_my_profile_not_found(client: TestClient):
 
 
 def test_get_my_profile(client: TestClient):
-    from src.app.api.users.route import UserService as RouteUserService
-
     mock_service = MagicMock()
     mock_service.get_profile_self = AsyncMock(return_value=_profile())
-    client.app.dependency_overrides[RouteUserService] = lambda: mock_service
+    client.app.dependency_overrides[UserService] = lambda: mock_service
 
     response = client.get("/users/me/profile")
 
@@ -71,12 +67,10 @@ def test_get_my_profile(client: TestClient):
 
 
 def test_update_my_profile(client: TestClient):
-    from src.app.api.users.route import UserService as RouteUserService
-
     updated = {**_profile(), "first_name": "Updated"}
     mock_service = MagicMock()
     mock_service.update_profile_self = AsyncMock(return_value=updated)
-    client.app.dependency_overrides[RouteUserService] = lambda: mock_service
+    client.app.dependency_overrides[UserService] = lambda: mock_service
 
     response = client.put("/users/me/profile", json={"first_name": "Updated"})
 

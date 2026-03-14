@@ -60,16 +60,16 @@ def _user_profile_row() -> dict:
 
 @pytest.fixture
 def mock_supabase() -> MagicMock:
-    """Create a mock Supabase client with sensible defaults for user_profiles."""
+    """Create a mock Supabase client with sensible defaults for user_profiles (so UserService returns real dicts, not MagicMocks). Other tests can still set table.return_value.select... etc. for their tables."""
     mock = MagicMock()
     table = mock.table.return_value
-    # Chain: .table().select().eq().maybe_single().execute() -> .data
+    # user_profiles: .table().select().eq().maybe_single().execute() -> .data
     select_result = MagicMock()
     select_result.data = _user_profile_row()
     table.select.return_value.eq.return_value.maybe_single.return_value.execute.return_value = (
         select_result
     )
-    # Chain: .table().update().eq().execute() -> .data = [row]
+    # user_profiles: .table().update().eq().execute() -> .data = [row]
     update_result = MagicMock()
     update_result.data = [_user_profile_row()]
     table.update.return_value.eq.return_value.execute.return_value = update_result

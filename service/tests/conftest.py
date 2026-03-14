@@ -39,10 +39,41 @@ def mock_user() -> MagicMock:
     return user
 
 
+def _user_profile_row() -> dict:
+    """Default user profile row returned by mock Supabase for user_profiles table."""
+    return {
+        "id": "profile-1",
+        "email": "test@example.com",
+        "first_name": "Test",
+        "last_name": "User",
+        "full_name": "Test User",
+        "company_email": "test@company.com",
+        "notes": "notes",
+        "avatar_url": None,
+        "department": None,
+        "position": None,
+        "phone": None,
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z",
+    }
+
+
 @pytest.fixture
 def mock_supabase() -> MagicMock:
-    """Create a mock Supabase client."""
-    return MagicMock()
+    """Create a mock Supabase client with sensible defaults for user_profiles."""
+    mock = MagicMock()
+    table = mock.table.return_value
+    # Chain: .table().select().eq().maybe_single().execute() -> .data
+    select_result = MagicMock()
+    select_result.data = _user_profile_row()
+    table.select.return_value.eq.return_value.maybe_single.return_value.execute.return_value = (
+        select_result
+    )
+    # Chain: .table().update().eq().execute() -> .data = [row]
+    update_result = MagicMock()
+    update_result.data = [_user_profile_row()]
+    table.update.return_value.eq.return_value.execute.return_value = update_result
+    return mock
 
 
 @pytest.fixture

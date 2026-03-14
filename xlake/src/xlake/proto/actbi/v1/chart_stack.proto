@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package actbi.v1;
+
+import "actbi/v1/chart.proto";
+import "google/protobuf/timestamp.proto";
+
+// ChartStack: Narrative grouping of charts.
+// Insights and recommendations are decoupled and stored separately.
+message ChartStack {
+  string id = 1;
+  string title = 2;
+
+  // Charts grouped in this stack
+  repeated Chart charts = 3;
+
+  // Metadata only (no insights / recommendations here)
+  google.protobuf.Timestamp created_at = 4;
+  google.protobuf.Timestamp updated_at = 5;
+
+  uint32 schema_version = 6;
+}
+

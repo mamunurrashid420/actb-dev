@@ -1,0 +1,112 @@
+{
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "create": "Crea",
+    "search": "Cerca",
+    "filter": "Filtra",
+    "actions": "Azioni",
+    "confirm": "Conferma",
+    "back": "Indietro",
+    "next": "Avanti",
+    "submit": "Invia",
+    "close": "Chiudi",
+    "export": "Esporta",
+    "viewFullReport": "Visualizza Report Completo",
+    "downloadCsv": "Scarica CSV"
+  },
+  "auth": {
+    "login": "Accedi",
+    "logout": "Esci",
+    "register": "Registrati",
+    "email": "Email",
+    "emailAddress": "Indirizzo email",
+    "password": "Password",
+    "invalidEmail": "Inserisci un indirizzo email valido.",
+    "passwordMin": "La password deve avere almeno 6 caratteri.",
+    "rememberMe": "Ricordami per 30 giorni",
+    "forgotPassword": "Password dimenticata?",
+    "noAccount": "Non hai un account?",
+    "hasAccount": "Hai già un account?",
+    "signIn": "Accedi",
+    "signUp": "Registrati",
+    "loginTitle": "Accedi al tuo account",
+    "loginSubtitle": "Inserisci i tuoi dati per accedere.",
+    "orContinueWith": "Oppure continua con",
+    "signingIn": "Accesso in corso...",
+    "loginFailed": "Accesso non riuscito",
+    "loginSuccess": "Accesso riuscito!",
+    "redirecting": "Stai per essere reindirizzato alla dashboard.",
+    "unexpectedError": "Si è verificato un errore imprevisto. Riprova.",
+    "demoAccounts": "Accesso demo rapido",
+    "demoAccountsDesc": "Scegli un ruolo per compilare automaticamente le credenziali. Clicca invia per accedere.",
+    "fill": "Compila",
+    "demo": "demo"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "profile": "Profilo",
+    "settings": "Impostazioni",
+    "admin": "Amministrazione",
+    "charts": "Grafici",
+    "finance": "Finanza"
+  },
+  "sidebar": {
+    "quickCreate": "Creazione Rapida",
+    "inbox": "Posta in arrivo",
+    "groups": {
+      "dashboards": "Dashboard",
+      "admin": "Amministrazione"
+    },
+    "items": {
+      "default": "Predefinito",
+      "connections": "Connessioni",
+      "profile": "Profilo",
+      "tenants": "Tenant",
+      "users": "Utenti",
+      "access": "Ruoli e permessi"
+    },
+    "soon": "Presto"
+  },
+  "user": {
+    "profile": "Profilo",
+    "billing": "Fatturazione",
+    "notifications": "Notifiche",
+    "logOut": "Esci"
+  },
+  "dashboard": {
+    "welcome": "Benvenuto",
+    "overview": "Panoramica",
+    "recentActivity": "Attività Recente",
+    "newLeads": "Nuovi Lead",
+    "lastMonth": "Ultimo Mese",
+    "proposalsSent": "Proposte Inviate",
+    "revenue": "Fatturato",
+    "last6Months": "Ultimi 6 Mesi",
+    "projectsWon": "Progetti Vinti",
+    "revenueGrowth": "Crescita Fatturato",
+    "yearToDate": "Da Inizio Anno (YTD)",
+    "growthSinceLastYear": "+35% di crescita rispetto all'anno scorso",
+    "leadsBySource": "Lead per Fonte",
+    "leads": "Lead",
+    "projectRevenueVsTarget": "Fatturato Progetto vs. Obiettivo",
+    "averageProgress": "Progresso medio: 78% · 2 progetti sopra l'obiettivo",
+    "salesPipeline": "Pipeline Vendite",
+    "leadsIncreasedBy": "I lead sono aumentati del 18.2% rispetto al mese scorso.",
+    "salesByRegion": "Vendite per Regione",
+    "regionsTracked": "{count} regioni monitorate",
+    "regionsGrowing": "{count} regioni in crescita",
+    "actionItems": "Attività da Completare",
+    "recentLeads": "Lead Recenti",
+    "recentLeadsDesc": "Monitora e gestisci i tuoi ultimi lead e il loro stato.",
+    "priority": {
+      "high": "Alta",
+      "medium": "Media",
+      "low": "Bassa"
+    }
+  }
+}

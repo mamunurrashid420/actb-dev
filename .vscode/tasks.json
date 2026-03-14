@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup All",
+      "type": "shell",
+      "command": "just setup",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev: Admin",
+      "type": "shell",
+      "command": "just dev-admin",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev: XMS",
+      "type": "shell",
+      "command": "just dev-xms",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev: Pipelines",
+      "type": "shell",
+      "command": "just dev-pipelines",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Test All",
+      "type": "shell",
+      "command": "just test",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Lint All",
+      "type": "shell",
+      "command": "just lint",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

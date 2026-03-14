@@ -1,0 +1,11 @@
+# Markdown - let authors control formatting
+*.md
+
+# Build outputs
+node_modules/
+.next/
+dist/
+build/
+
+# Generated files
+pnpm-lock.yaml

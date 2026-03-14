@@ -1,0 +1,1 @@
+# Tenant Assets API tests

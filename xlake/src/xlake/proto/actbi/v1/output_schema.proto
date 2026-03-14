@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package actbi.v1;
+
+import "google/protobuf/timestamp.proto";
+
+// FieldType: Logical data type for output fields.
+// Stays small to avoid over-encoding; maps cleanly to JSON + Polars + UI.
+enum FieldType {
+  FIELD_TYPE_UNSPECIFIED = 0;
+
+  STRING = 1;
+  INT = 2;
+  FLOAT = 3;
+  BOOLEAN = 4;
+
+  DATE = 5;       // calendar date, no time
+  TIMESTAMP = 6;  // absolute time
+}
+
+// FieldRole: Semantic role of a field in charts.
+enum FieldRole {
+  ROLE_UNSPECIFIED = 0;
+
+  IDENTIFIER = 1;  // row_id, primary keys
+  DIMENSION = 2;   // categories, time axes
+  MEASURE = 3;     // numeric values
+}
+
+// OutputField: Definition of a single field in the output schema.
+message OutputField {
+  // Column name as it appears in JSON rows
+  string name = 1;
+
+  // Logical data type
+  FieldType type = 2;
+
+  // Semantic role in charts
+  FieldRole role = 3;
+
+  // Business meaning / explanation
+  string context = 4;
+
+  // Optional constraints
+  bool nullable = 5;
+}
+
+// OutputSchema: Defines the shape of materialized data.
+// Authoritative shape contract between data and charts.
+message OutputSchema {
+  string id = 1;
+  uint32 version = 2;
+
+  // Logical name (for humans / debugging)
+  string name = 3;
+
+  repeated OutputField fields = 4;
+
+  // Stable row identity
+  repeated string primary_key = 5;
+
+  google.protobuf.Timestamp created_at = 6;
+  uint32 schema_version = 7;
+}
+

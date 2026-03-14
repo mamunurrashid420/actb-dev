@@ -1,0 +1,57 @@
+[project]
+name = "agents"
+version = "0.1.0"
+description = "Multi-agent system for actBI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.6.0",
+    "python-dotenv>=1.0.0",
+    # LangChain (thin wrapper for LLM calls)
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-anthropic>=0.3.0",
+    "langchain-google-genai>=2.0.0",
+    "langchain-openai>=0.3.0",
+    # LangGraph (ReAct agent orchestration)
+    "langgraph>=0.2.0",
+    # Shared data types
+    "shared-data",
+    # XLake (semantic data layer, protobuf models, stores)
+    "xlake",
+]
+
+[tool.uv.sources]
+shared-data = { workspace = true }
+xlake = { workspace = true }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+python_files = ["*_test.py", "test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "integration: Integration tests (require LLM API, run with -m integration)",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.10",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=0.24.0",
+    "jupyter>=1.0.0",
+    "nest-asyncio>=1.6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["**/*.py"]

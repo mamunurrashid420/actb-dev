@@ -1,0 +1,66 @@
+[
+  {
+    "name": "gdp_search",
+    "inputs": {
+      "query": "Find GDP data for the United States",
+      "focus_areas": ["economic"],
+      "max_results": 5
+    },
+    "expected_output": null,
+    "metadata": {
+      "category": "economic",
+      "difficulty": "easy",
+      "expected_keywords": ["gdp"]
+    }
+  },
+  {
+    "name": "unemployment_search",
+    "inputs": {
+      "query": "What unemployment data is available?",
+      "focus_areas": ["economic"],
+      "max_results": 5
+    },
+    "expected_output": null,
+    "metadata": {
+      "category": "economic",
+      "expected_keywords": ["unemployment"]
+    }
+  },
+  {
+    "name": "sec_financials",
+    "inputs": {
+      "query": "Find company financial statements from SEC filings",
+      "focus_areas": ["corporate"],
+      "max_results": 5
+    },
+    "expected_output": null,
+    "metadata": {
+      "category": "corporate",
+      "expected_keywords": ["sec"]
+    }
+  },
+  {
+    "name": "company_segments",
+    "inputs": {
+      "query": "How can I see revenue breakdown by region for companies?",
+      "focus_areas": ["corporate"],
+      "max_results": 5
+    },
+    "expected_output": null,
+    "metadata": {
+      "category": "corporate"
+    }
+  },
+  {
+    "name": "broad_search",
+    "inputs": {
+      "query": "What data sources are available for economic analysis?",
+      "max_results": 10
+    },
+    "expected_output": null,
+    "metadata": {
+      "category": "discovery",
+      "difficulty": "medium"
+    }
+  }
+]

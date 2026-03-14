@@ -1,0 +1,25 @@
+# Dataset manifest: maps dataset names to their input/output schemas.
+#
+# Adding a new dataset:
+#   1. Create the dataset file (any format): .yaml, .json, or .jsonl
+#   2. Add an entry here with the schema types
+#   3. Run tests - they automatically validate all datasets
+#
+# Supported formats (checked in order):
+#   - .yaml  (most readable, supports comments)
+#   - .json  (standard JSON array)
+#   - .jsonl (one JSON object per line)
+#
+# Schema format: "module.path:ClassName"
+
+intent_classifier:
+  input: agents.intent_classifier.schemas:IntentClassifierInput
+  output: agents.intent_classifier.schemas:IntentClassifierOutput
+
+viz_designer:
+  input: agents.viz_designer.schemas:VizInput
+  output: agents.viz_designer.schemas:VizOutput
+
+data_explorer:
+  input: agents.data_explorer.schemas:DataExplorerInput
+  output: agents.data_explorer.schemas:DataExplorerOutput

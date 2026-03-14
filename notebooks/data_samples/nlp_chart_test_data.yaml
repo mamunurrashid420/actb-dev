@@ -1,0 +1,795 @@
+# NLP-to-Chart Test Data
+# Following CustomerChartStore design patterns
+# Version: 1.0.0
+
+metadata:
+  version: "1.0.0"
+  created_at: "2025-01-21"
+  description: Test data for NLP-to-chart pipeline validation
+  field_types: [STRING, INTEGER, FLOAT, BOOLEAN]
+  field_roles: [IDENTIFIER, DIMENSION, MEASURE, ATTRIBUTE]
+  supported_chart_types:
+    - bar_chart_vertical
+    - bar_chart_horizontal
+    - line_chart
+    - area_chart
+    - scatter_plot
+    - pie_chart
+    - donut_chart
+    - heatmap
+    - cohort_heatmap
+    - boxplot
+    - violin_plot
+
+test_cases:
+  # ===========================================================================
+  # TEST CASE 1: Simple Monthly Sales (Bar Chart)
+  # ===========================================================================
+  - id: tc_001_monthly_sales
+
+    nlp_query: Show me the monthly sales numbers for the last twelve months
+
+    expected_chart:
+      id: chart_monthly_sales_v1
+      title: Monthly Sales (Last 12 Months)
+      chart_type: bar_chart_vertical
+      dimensions:
+        - field: month
+          type: time
+        - field: sales_amount
+          type: numeric
+      filters: []
+      version: 1
+      schema_version: 1
+
+    output_schema:
+      id: schema_monthly_sales_v1
+      version: 1
+      fields:
+        - name: row_id
+          type: STRING
+          role: IDENTIFIER
+          context: Stable identifier for each monthly record
+        - name: month
+          type: STRING
+          role: DIMENSION
+          context: Month label in YYYY-MM format
+        - name: sales_amount
+          type: FLOAT
+          role: MEASURE
+          context: Total sales amount in USD for the month
+      primary_key: [row_id]
+      schema_version: 1
+
+    materialized_data:
+      schema_id: schema_monthly_sales_v1
+      rows:
+        - { row_id: r1, month: "2025-01", sales_amount: 125000.00 }
+        - { row_id: r2, month: "2025-02", sales_amount: 118500.50 }
+        - { row_id: r3, month: "2025-03", sales_amount: 142300.75 }
+        - { row_id: r4, month: "2025-04", sales_amount: 138900.25 }
+        - { row_id: r5, month: "2025-05", sales_amount: 155200.00 }
+        - { row_id: r6, month: "2025-06", sales_amount: 148750.50 }
+        - { row_id: r7, month: "2025-07", sales_amount: 162400.00 }
+        - { row_id: r8, month: "2025-08", sales_amount: 171250.75 }
+        - { row_id: r9, month: "2025-09", sales_amount: 158900.25 }
+        - { row_id: r10, month: "2025-10", sales_amount: 183500.00 }
+        - { row_id: r11, month: "2025-11", sales_amount: 195200.50 }
+        - { row_id: r12, month: "2025-12", sales_amount: 215800.75 }
+
+  # ===========================================================================
+  # TEST CASE 2: Multi-dimensional Sales Analysis (Heatmap)
+  # ===========================================================================
+  - id: tc_002_sales_by_region_product
+
+    nlp_query: >
+      Compare sales by region and product category for Q4 2025, 
+      show me which combinations are performing best
+
+    expected_chart:
+      id: chart_sales_region_product_v1
+      title: Q4 2025 Sales by Region and Product Category
+      chart_type: heatmap
+      dimensions:
+        - field: region
+          type: category
+        - field: product_category
+          type: category
+        - field: sales_amount
+          type: numeric
+      filters:
+        - field: quarter
+          operator: eq
+          value: Q4
+        - field: year
+          operator: eq
+          value: "2025"
+      version: 1
+      schema_version: 1
+
+    output_schema:
+      id: schema_sales_region_product_v1
+      version: 1
+      fields:
+        - name: row_id
+          type: STRING
+          role: IDENTIFIER
+          context: Stable identifier for each region-product combination
+        - name: region
+          type: STRING
+          role: DIMENSION
+          context: Geographic sales region
+        - name: product_category
+          type: STRING
+          role: DIMENSION
+          context: Product category classification
+        - name: sales_amount
+          type: FLOAT
+          role: MEASURE
+          context: Total sales amount in USD
+        - name: transaction_count
+          type: INTEGER
+          role: MEASURE
+          context: Number of transactions
+      primary_key: [row_id]
+      schema_version: 1
+
+    materialized_data:
+      schema_id: schema_sales_region_product_v1
+      rows:
+        # North America
+        - {
+            row_id: r1,
+            region: North America,
+            product_category: Electronics,
+            sales_amount: 458000.00,
+            transaction_count: 1250,
+          }
+        - {
+            row_id: r2,
+            region: North America,
+            product_category: Apparel,
+            sales_amount: 312000.50,
+            transaction_count: 2340,
+          }
+        - {
+            row_id: r3,
+            region: North America,
+            product_category: Home & Garden,
+            sales_amount: 189500.25,
+            transaction_count: 890,
+          }
+        # Europe
+        - {
+            row_id: r4,
+            region: Europe,
+            product_category: Electronics,
+            sales_amount: 385000.00,
+            transaction_count: 1120,
+          }
+        - {
+            row_id: r5,
+            region: Europe,
+            product_category: Apparel,
+            sales_amount: 425000.75,
+            transaction_count: 3150,
+          }
+        - {
+            row_id: r6,
+            region: Europe,
+            product_category: Home & Garden,
+            sales_amount: 167800.50,
+            transaction_count: 720,
+          }
+        # Asia Pacific
+        - {
+            row_id: r7,
+            region: Asia Pacific,
+            product_category: Electronics,
+            sales_amount: 592000.00,
+            transaction_count: 1890,
+          }
+        - {
+            row_id: r8,
+            region: Asia Pacific,
+            product_category: Apparel,
+            sales_amount: 278000.25,
+            transaction_count: 2100,
+          }
+        - {
+            row_id: r9,
+            region: Asia Pacific,
+            product_category: Home & Garden,
+            sales_amount: 145200.00,
+            transaction_count: 650,
+          }
+        # Latin America
+        - {
+            row_id: r10,
+            region: Latin America,
+            product_category: Electronics,
+            sales_amount: 156000.50,
+            transaction_count: 480,
+          }
+        - {
+            row_id: r11,
+            region: Latin America,
+            product_category: Apparel,
+            sales_amount: 198500.00,
+            transaction_count: 1560,
+          }
+        - {
+            row_id: r12,
+            region: Latin America,
+            product_category: Home & Garden,
+            sales_amount: 87200.75,
+            transaction_count: 390,
+          }
+
+  # ===========================================================================
+  # TEST CASE 3: Cohort Retention Analysis (Cohort Heatmap)
+  # ===========================================================================
+  - id: tc_003_customer_cohort_retention
+
+    nlp_query: Show me customer retention rates by signup cohort over the past 6 months
+
+    expected_chart:
+      id: chart_cohort_retention_v1
+      title: Customer Retention by Signup Cohort
+      chart_type: cohort_heatmap
+      dimensions:
+        - field: cohort_month
+          type: time
+        - field: months_since_signup
+          type: numeric
+        - field: retention_rate
+          type: numeric
+      filters: []
+      version: 1
+      schema_version: 1
+
+    output_schema:
+      id: schema_cohort_retention_v1
+      version: 1
+      fields:
+        - name: row_id
+          type: STRING
+          role: IDENTIFIER
+          context: Stable identifier for each cohort-period combination
+        - name: cohort_month
+          type: STRING
+          role: DIMENSION
+          context: Month when customers signed up (YYYY-MM)
+        - name: months_since_signup
+          type: INTEGER
+          role: DIMENSION
+          context: Number of months elapsed since signup (0 = signup month)
+        - name: cohort_size
+          type: INTEGER
+          role: MEASURE
+          context: Number of customers in the cohort at signup
+        - name: active_customers
+          type: INTEGER
+          role: MEASURE
+          context: Number of customers still active in this period
+        - name: retention_rate
+          type: FLOAT
+          role: MEASURE
+          context: Percentage of customers retained (0-100)
+      primary_key: [row_id]
+      schema_version: 1
+
+    materialized_data:
+      schema_id: schema_cohort_retention_v1
+      rows:
+        # July 2025 Cohort
+        - {
+            row_id: r1,
+            cohort_month: "2025-07",
+            months_since_signup: 0,
+            cohort_size: 1200,
+            active_customers: 1200,
+            retention_rate: 100.0,
+          }
+        - {
+            row_id: r2,
+            cohort_month: "2025-07",
+            months_since_signup: 1,
+            cohort_size: 1200,
+            active_customers: 960,
+            retention_rate: 80.0,
+          }
+        - {
+            row_id: r3,
+            cohort_month: "2025-07",
+            months_since_signup: 2,
+            cohort_size: 1200,
+            active_customers: 840,
+            retention_rate: 70.0,
+          }
+        - {
+            row_id: r4,
+            cohort_month: "2025-07",
+            months_since_signup: 3,
+            cohort_size: 1200,
+            active_customers: 756,
+            retention_rate: 63.0,
+          }
+        - {
+            row_id: r5,
+            cohort_month: "2025-07",
+            months_since_signup: 4,
+            cohort_size: 1200,
+            active_customers: 696,
+            retention_rate: 58.0,
+          }
+        - {
+            row_id: r6,
+            cohort_month: "2025-07",
+            months_since_signup: 5,
+            cohort_size: 1200,
+            active_customers: 660,
+            retention_rate: 55.0,
+          }
+        # August 2025 Cohort
+        - {
+            row_id: r7,
+            cohort_month: "2025-08",
+            months_since_signup: 0,
+            cohort_size: 1450,
+            active_customers: 1450,
+            retention_rate: 100.0,
+          }
+        - {
+            row_id: r8,
+            cohort_month: "2025-08",
+            months_since_signup: 1,
+            cohort_size: 1450,
+            active_customers: 1218,
+            retention_rate: 84.0,
+          }
+        - {
+            row_id: r9,
+            cohort_month: "2025-08",
+            months_since_signup: 2,
+            cohort_size: 1450,
+            active_customers: 1044,
+            retention_rate: 72.0,
+          }
+        - {
+            row_id: r10,
+            cohort_month: "2025-08",
+            months_since_signup: 3,
+            cohort_size: 1450,
+            active_customers: 957,
+            retention_rate: 66.0,
+          }
+        - {
+            row_id: r11,
+            cohort_month: "2025-08",
+            months_since_signup: 4,
+            cohort_size: 1450,
+            active_customers: 885,
+            retention_rate: 61.0,
+          }
+        # September 2025 Cohort
+        - {
+            row_id: r12,
+            cohort_month: "2025-09",
+            months_since_signup: 0,
+            cohort_size: 1680,
+            active_customers: 1680,
+            retention_rate: 100.0,
+          }
+        - {
+            row_id: r13,
+            cohort_month: "2025-09",
+            months_since_signup: 1,
+            cohort_size: 1680,
+            active_customers: 1428,
+            retention_rate: 85.0,
+          }
+        - {
+            row_id: r14,
+            cohort_month: "2025-09",
+            months_since_signup: 2,
+            cohort_size: 1680,
+            active_customers: 1260,
+            retention_rate: 75.0,
+          }
+        - {
+            row_id: r15,
+            cohort_month: "2025-09",
+            months_since_signup: 3,
+            cohort_size: 1680,
+            active_customers: 1142,
+            retention_rate: 68.0,
+          }
+        # October 2025 Cohort
+        - {
+            row_id: r16,
+            cohort_month: "2025-10",
+            months_since_signup: 0,
+            cohort_size: 1520,
+            active_customers: 1520,
+            retention_rate: 100.0,
+          }
+        - {
+            row_id: r17,
+            cohort_month: "2025-10",
+            months_since_signup: 1,
+            cohort_size: 1520,
+            active_customers: 1277,
+            retention_rate: 84.0,
+          }
+        - {
+            row_id: r18,
+            cohort_month: "2025-10",
+            months_since_signup: 2,
+            cohort_size: 1520,
+            active_customers: 1109,
+            retention_rate: 73.0,
+          }
+        # November 2025 Cohort
+        - {
+            row_id: r19,
+            cohort_month: "2025-11",
+            months_since_signup: 0,
+            cohort_size: 1890,
+            active_customers: 1890,
+            retention_rate: 100.0,
+          }
+        - {
+            row_id: r20,
+            cohort_month: "2025-11",
+            months_since_signup: 1,
+            cohort_size: 1890,
+            active_customers: 1625,
+            retention_rate: 86.0,
+          }
+        # December 2025 Cohort
+        - {
+            row_id: r21,
+            cohort_month: "2025-12",
+            months_since_signup: 0,
+            cohort_size: 2100,
+            active_customers: 2100,
+            retention_rate: 100.0,
+          }
+
+  # ===========================================================================
+  # TEST CASE 4: Revenue vs Costs with Margin Trend (Combo Chart)
+  # ===========================================================================
+  - id: tc_004_revenue_vs_cost_trend
+
+    nlp_query: Plot revenue versus operating costs over the last 8 quarters with profit margin trend
+
+    expected_chart:
+      id: chart_revenue_cost_margin_v1
+      title: Revenue vs Operating Costs with Profit Margin Trend
+      chart_type: combo
+      combo_types: [bar_chart_vertical, line_chart] # bar for revenue/costs, line for margin trend
+      dimensions:
+        - field: quarter
+          type: time
+        - field: revenue
+          type: numeric
+        - field: operating_costs
+          type: numeric
+        - field: profit_margin_pct
+          type: numeric
+      filters: []
+      chart_config:
+        primary_axis:
+          type: bar_chart_vertical
+          fields: [revenue, operating_costs]
+          stacked: false
+        secondary_axis:
+          type: line_chart
+          fields: [profit_margin_pct]
+      version: 1
+      schema_version: 1
+
+    output_schema:
+      id: schema_revenue_cost_margin_v1
+      version: 1
+      fields:
+        - name: row_id
+          type: STRING
+          role: IDENTIFIER
+          context: Stable identifier for each quarterly record
+        - name: quarter
+          type: STRING
+          role: DIMENSION
+          context: Fiscal quarter label (e.g., Q1 2024)
+        - name: revenue
+          type: FLOAT
+          role: MEASURE
+          context: Total revenue in millions USD
+        - name: operating_costs
+          type: FLOAT
+          role: MEASURE
+          context: Total operating costs in millions USD
+        - name: gross_profit
+          type: FLOAT
+          role: MEASURE
+          context: Gross profit in millions USD (revenue - operating_costs)
+        - name: profit_margin_pct
+          type: FLOAT
+          role: MEASURE
+          context: Profit margin as percentage (0-100)
+      primary_key: [row_id]
+      schema_version: 1
+
+    materialized_data:
+      schema_id: schema_revenue_cost_margin_v1
+      rows:
+        - {
+            row_id: r1,
+            quarter: Q1 2024,
+            revenue: 45.2,
+            operating_costs: 32.5,
+            gross_profit: 12.7,
+            profit_margin_pct: 28.1,
+          }
+        - {
+            row_id: r2,
+            quarter: Q2 2024,
+            revenue: 48.7,
+            operating_costs: 34.1,
+            gross_profit: 14.6,
+            profit_margin_pct: 30.0,
+          }
+        - {
+            row_id: r3,
+            quarter: Q3 2024,
+            revenue: 52.3,
+            operating_costs: 35.8,
+            gross_profit: 16.5,
+            profit_margin_pct: 31.5,
+          }
+        - {
+            row_id: r4,
+            quarter: Q4 2024,
+            revenue: 58.9,
+            operating_costs: 38.2,
+            gross_profit: 20.7,
+            profit_margin_pct: 35.1,
+          }
+        - {
+            row_id: r5,
+            quarter: Q1 2025,
+            revenue: 54.1,
+            operating_costs: 36.9,
+            gross_profit: 17.2,
+            profit_margin_pct: 31.8,
+          }
+        - {
+            row_id: r6,
+            quarter: Q2 2025,
+            revenue: 59.8,
+            operating_costs: 39.5,
+            gross_profit: 20.3,
+            profit_margin_pct: 33.9,
+          }
+        - {
+            row_id: r7,
+            quarter: Q3 2025,
+            revenue: 64.2,
+            operating_costs: 41.2,
+            gross_profit: 23.0,
+            profit_margin_pct: 35.8,
+          }
+        - {
+            row_id: r8,
+            quarter: Q4 2025,
+            revenue: 72.5,
+            operating_costs: 44.8,
+            gross_profit: 27.7,
+            profit_margin_pct: 38.2,
+          }
+
+  # ===========================================================================
+  # TEST CASE 5: Order Value Distribution with Outliers (Box Plot)
+  # ===========================================================================
+  - id: tc_005_distribution_analysis
+
+    nlp_query: Show me the distribution of order values by customer segment with outliers highlighted
+
+    expected_chart:
+      id: chart_order_value_distribution_v1
+      title: Order Value Distribution by Customer Segment
+      chart_type: boxplot
+      dimensions:
+        - field: customer_segment
+          type: category
+        - field: order_value
+          type: numeric
+      filters: []
+      chart_config:
+        show_outliers: true
+        show_mean: true
+        orientation: vertical
+      version: 1
+      schema_version: 1
+
+    output_schema:
+      id: schema_order_value_distribution_v1
+      version: 1
+      fields:
+        - name: row_id
+          type: STRING
+          role: IDENTIFIER
+          context: Stable identifier for each order record
+        - name: customer_segment
+          type: STRING
+          role: DIMENSION
+          context: Customer segmentation tier (Enterprise, SMB, Consumer)
+        - name: order_value
+          type: FLOAT
+          role: MEASURE
+          context: Individual order value in USD
+        - name: is_outlier
+          type: BOOLEAN
+          role: ATTRIBUTE
+          context: Flag indicating if this order is a statistical outlier
+      primary_key: [row_id]
+      schema_version: 1
+
+    materialized_data:
+      schema_id: schema_order_value_distribution_v1
+      rows:
+        # Enterprise segment
+        - {
+            row_id: r1,
+            customer_segment: Enterprise,
+            order_value: 15200.00,
+            is_outlier: false,
+          }
+        - {
+            row_id: r2,
+            customer_segment: Enterprise,
+            order_value: 18500.50,
+            is_outlier: false,
+          }
+        - {
+            row_id: r3,
+            customer_segment: Enterprise,
+            order_value: 22100.00,
+            is_outlier: false,
+          }
+        - {
+            row_id: r4,
+            customer_segment: Enterprise,
+            order_value: 19800.75,
+            is_outlier: false,
+          }
+        - {
+            row_id: r5,
+            customer_segment: Enterprise,
+            order_value: 45000.00,
+            is_outlier: true,
+          } # outlier
+        - {
+            row_id: r6,
+            customer_segment: Enterprise,
+            order_value: 17650.25,
+            is_outlier: false,
+          }
+        - {
+            row_id: r7,
+            customer_segment: Enterprise,
+            order_value: 21300.00,
+            is_outlier: false,
+          }
+        - {
+            row_id: r8,
+            customer_segment: Enterprise,
+            order_value: 16900.50,
+            is_outlier: false,
+          }
+        # SMB segment
+        - { row_id: r9, customer_segment: SMB, order_value: 3200.00, is_outlier: false }
+        - {
+            row_id: r10,
+            customer_segment: SMB,
+            order_value: 4500.75,
+            is_outlier: false,
+          }
+        - {
+            row_id: r11,
+            customer_segment: SMB,
+            order_value: 2800.50,
+            is_outlier: false,
+          }
+        - {
+            row_id: r12,
+            customer_segment: SMB,
+            order_value: 5100.00,
+            is_outlier: false,
+          }
+        - {
+            row_id: r13,
+            customer_segment: SMB,
+            order_value: 3750.25,
+            is_outlier: false,
+          }
+        - {
+            row_id: r14,
+            customer_segment: SMB,
+            order_value: 12500.00,
+            is_outlier: true,
+          } # outlier
+        - {
+            row_id: r15,
+            customer_segment: SMB,
+            order_value: 4200.00,
+            is_outlier: false,
+          }
+        - {
+            row_id: r16,
+            customer_segment: SMB,
+            order_value: 3900.50,
+            is_outlier: false,
+          }
+        # Consumer segment
+        - {
+            row_id: r17,
+            customer_segment: Consumer,
+            order_value: 125.00,
+            is_outlier: false,
+          }
+        - {
+            row_id: r18,
+            customer_segment: Consumer,
+            order_value: 89.50,
+            is_outlier: false,
+          }
+        - {
+            row_id: r19,
+            customer_segment: Consumer,
+            order_value: 245.75,
+            is_outlier: false,
+          }
+        - {
+            row_id: r20,
+            customer_segment: Consumer,
+            order_value: 178.00,
+            is_outlier: false,
+          }
+        - {
+            row_id: r21,
+            customer_segment: Consumer,
+            order_value: 52.25,
+            is_outlier: false,
+          }
+        - {
+            row_id: r22,
+            customer_segment: Consumer,
+            order_value: 890.00,
+            is_outlier: true,
+          } # outlier
+        - {
+            row_id: r23,
+            customer_segment: Consumer,
+            order_value: 145.50,
+            is_outlier: false,
+          }
+        - {
+            row_id: r24,
+            customer_segment: Consumer,
+            order_value: 198.75,
+            is_outlier: false,
+          }
+        - {
+            row_id: r25,
+            customer_segment: Consumer,
+            order_value: 67.00,
+            is_outlier: false,
+          }
+        - {
+            row_id: r26,
+            customer_segment: Consumer,
+            order_value: 312.50,
+            is_outlier: false,
+          }

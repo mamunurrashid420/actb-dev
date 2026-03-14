@@ -1,0 +1,106 @@
+"use client";
+
+import type { ComponentProps } from "react";
+
+import Image from "next/image";
+import Link from "next/link";
+
+import { Building2, Users } from "lucide-react";
+
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+} from "@/components/ui/sidebar";
+import type { NavGroup } from "@/navigation/sidebar/sidebar-items";
+
+import { NavMain } from "./nav-main";
+import { NavUser } from "./nav-user";
+
+type AppSidebarProps = ComponentProps<typeof Sidebar> & {
+  readonly user: {
+    readonly name: string;
+    readonly email: string;
+    readonly avatar: string;
+    readonly role?: string;
+  };
+};
+
+export function AppSidebar({ user, ...props }: AppSidebarProps) {
+  const navItems: NavGroup[] = [
+    {
+      id: 1,
+      label: "Admin",
+      items: [
+        {
+          title: "Tenants",
+          url: "/admin/tenants",
+          icon: Building2,
+        },
+        {
+          title: "Users",
+          url: "/admin/users",
+          icon: Users,
+        },
+      ],
+    },
+  ];
+
+  return (
+    <Sidebar {...props}>
+      <SidebarHeader>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton
+              asChild
+              className="data-[slot=sidebar-menu-button]:!p-1.5"
+            >
+              <Link href="/admin/tenants" className="flex items-center gap-2">
+                <div className="flex h-10 items-center group-data-[collapsible=icon]:hidden">
+                  <Image
+                    src="/Logo/actbi-logo-w-text.png"
+                    alt="Actbi Logo"
+                    width={120}
+                    height={32}
+                    className="block h-8 w-auto object-contain"
+                    priority
+                  />
+                </div>
+                <div className="text-primary-foreground hidden h-8 w-8 items-center justify-center rounded bg-transparent group-data-[collapsible=icon]:flex">
+                  <Image
+                    src="/Logo/actbi-logo-trimmed.png"
+                    alt="Actbi icon"
+                    width={32}
+                    height={32}
+                    className="block h-8 w-auto object-contain dark:hidden"
+                    priority
+                  />
+                  <Image
+                    src="/Logo/actbi-logo-trimmed.png"
+                    alt="Actbi icon"
+                    width={32}
+                    height={32}
+                    className="hidden h-8 w-auto object-contain dark:block"
+                    priority
+                  />
+                </div>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
+      </SidebarHeader>
+      <SidebarContent>
+        <NavMain items={navItems} />
+        {/* <NavDocuments items={data.documents} /> */}
+        {/* <NavSecondary items={data.navSecondary} className="mt-auto" /> */}
+      </SidebarContent>
+      <SidebarFooter>
+        <NavUser user={user} />
+      </SidebarFooter>
+    </Sidebar>
+  );
+}

@@ -1,0 +1,28 @@
+# Intent Classifier Evaluation Configuration
+name: intent_classifier_eval
+description: IntentClassifier evaluation suite
+
+agent: agents.intent_classifier:IntentClassifier
+
+prompts:
+  - py://agents.intent_classifier.agent:DEFAULT_PROMPT
+
+models:
+  - google:gemini-3-flash-preview
+
+dataset: intent_classifier
+
+# Experiment-level assertions (apply to ALL test cases)
+assert:
+  - type: not-null
+    field: task
+  - type: not-null
+    field: mode
+  - type: not-null
+    field: job
+  - type: latency-budget
+    max_seconds: 5
+
+tags:
+  - intent
+  - classification

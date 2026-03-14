@@ -1,0 +1,14 @@
+.container .rectangle {
+  opacity: 1;
+  filter: saturate(100%);
+}
+
+.container:hover .rectangle {
+  opacity: 0.4;
+  filter: saturate(50%);
+}
+
+.container .rectangle:hover {
+  opacity: 1;
+  filter: saturate(100%);
+}

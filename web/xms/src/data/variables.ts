@@ -1,0 +1,38 @@
+export const mockVariables = [
+  {
+    id: "1",
+    name: "customer_name",
+    type: "text" as const,
+    value: "John Doe",
+    description: "Customer's full name for personalization",
+    tags: ["customer", "personal"],
+    updatedAt: "2024-01-15",
+  },
+  {
+    id: "2",
+    name: "product_category",
+    type: "enum" as const,
+    value: "Electronics",
+    description: "Product category selection",
+    tags: ["product", "category"],
+    updatedAt: "2024-01-14",
+  },
+  {
+    id: "3",
+    name: "is_premium_user",
+    type: "boolean" as const,
+    value: "true",
+    description: "Whether the user has premium access",
+    tags: ["user", "subscription"],
+    updatedAt: "2024-01-13",
+  },
+  {
+    id: "4",
+    name: "order_count",
+    type: "number" as const,
+    value: "5",
+    description: "Number of orders placed by customer",
+    tags: ["customer", "orders"],
+    updatedAt: "2024-01-12",
+  },
+];

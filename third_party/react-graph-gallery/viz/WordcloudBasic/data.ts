@@ -1,0 +1,32 @@
+export const data = [
+  "data",
+  "wordcloud",
+  "science",
+  "map",
+  "treemap",
+  "viz",
+  "dataviz",
+  "code",
+  "react",
+  "d3.js",
+  "histogram",
+  "boxplot",
+  "ridgeline",
+  "distribution",
+  "anova",
+  "line",
+  "area",
+  "stack",
+  "streamgraph",
+  "polar",
+  "barplot",
+  "lollipop",
+  "sankey",
+  "arc",
+  "network",
+  "choropleth",
+  "scale",
+
+].map(function (d) {
+  return { text: d, value: 10 + Math.random() * 90 };
+});

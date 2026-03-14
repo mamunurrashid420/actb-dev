@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Next.js
+.next/
+out/
+
+# Dagster
+.dagster/
+storage/
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.nyc_output/
+coverage/
+
+# Build artifacts
+*.log
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Evaluation framework
+.eval/
+
+# Data (large files)
+pipelines/_data/
+*.parquet
+!pipelines/tests/fixtures/*.parquet
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+*.duckdb
+*.duckdb.wal
+
+# Supabase
+supabase/.branches/
+supabase/.temp/
+
+# Generated Protobuf
+*_pb2.py
+*_pb2_grpc.py
+*_pb2.pyi
+*_pb2_grpc.pyi
+xlake/src/xlake/generated/
+web/shared/src/generated/

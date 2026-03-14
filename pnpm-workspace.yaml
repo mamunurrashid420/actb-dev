@@ -1,0 +1,6 @@
+packages:
+  - 'web/*'
+  - 'third_party/react-graph-gallery'
+
+# Note: shared/* was removed - JS shared packages are now in web/shared
+# Python shared packages are in lib/ (managed by UV, not pnpm)

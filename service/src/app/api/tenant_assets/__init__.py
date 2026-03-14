@@ -1,0 +1,1 @@
+"""Tenant assets API package."""

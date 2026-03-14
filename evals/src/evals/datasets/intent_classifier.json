@@ -1,0 +1,278 @@
+[
+  {
+    "name": "show_revenue",
+    "inputs": {
+      "message_text": "Show Q4 revenue by region"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "reporter",
+      "job": "query",
+      "confidence": 0.9,
+      "rationale": "Direct data request for revenue breakdown",
+      "extracted_entities": {
+        "metrics": ["revenue"],
+        "dimensions": ["region"],
+        "filters": {},
+        "time_range": "Q4"
+      }
+    },
+    "metadata": {
+      "category": "consult_reporter"
+    }
+  },
+  {
+    "name": "plot_trends",
+    "inputs": {
+      "message_text": "Plot Apple's revenue over the last 5 years"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "reporter",
+      "job": "visualize",
+      "confidence": 0.9,
+      "rationale": "User explicitly wants a visualization",
+      "extracted_entities": {
+        "metrics": ["revenue"],
+        "dimensions": [],
+        "filters": {"company": "Apple"},
+        "time_range": "last 5 years"
+      }
+    },
+    "metadata": {
+      "category": "consult_reporter"
+    }
+  },
+  {
+    "name": "explain_trend",
+    "inputs": {
+      "message_text": "What does this revenue trend mean?"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "interpreter",
+      "job": "query",
+      "confidence": 0.85,
+      "rationale": "User asking for interpretation of data",
+      "extracted_entities": {
+        "metrics": ["revenue"],
+        "dimensions": [],
+        "filters": {}
+      }
+    },
+    "metadata": {
+      "category": "consult_interpreter"
+    }
+  },
+  {
+    "name": "what_related",
+    "inputs": {
+      "message_text": "What related data should I look at?"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "explorer",
+      "job": "discover",
+      "confidence": 0.85,
+      "rationale": "User seeking related/exploratory data"
+    },
+    "metadata": {
+      "category": "consult_explorer"
+    }
+  },
+  {
+    "name": "what_data_available",
+    "inputs": {
+      "message_text": "What GDP data do you have available?"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "explorer",
+      "job": "discover",
+      "confidence": 0.9,
+      "rationale": "User exploring available data",
+      "extracted_entities": {
+        "metrics": ["GDP"],
+        "dimensions": [],
+        "filters": {}
+      }
+    },
+    "metadata": {
+      "category": "consult_explorer"
+    }
+  },
+  {
+    "name": "compare_quarters",
+    "inputs": {
+      "message_text": "Compare Q4 vs Q3"
+    },
+    "expected_output": {
+      "task": "reflect",
+      "mode": "reporter",
+      "job": "query",
+      "confidence": 0.9,
+      "rationale": "Comparative analysis of existing data",
+      "extracted_entities": {
+        "metrics": [],
+        "dimensions": [],
+        "filters": {},
+        "comparison_target": "Q3",
+        "time_range": "Q4"
+      }
+    },
+    "metadata": {
+      "category": "reflect_reporter"
+    }
+  },
+  {
+    "name": "why_churn_rise",
+    "inputs": {
+      "message_text": "Why did churn rise despite stable pricing?"
+    },
+    "expected_output": {
+      "task": "reflect",
+      "mode": "interpreter",
+      "job": "query",
+      "confidence": 0.9,
+      "rationale": "Seeking explanation for observed phenomenon",
+      "extracted_entities": {
+        "metrics": ["churn", "pricing"],
+        "dimensions": [],
+        "filters": {}
+      }
+    },
+    "metadata": {
+      "category": "reflect_interpreter"
+    }
+  },
+  {
+    "name": "what_caused_drop",
+    "inputs": {
+      "message_text": "What caused this drop in margin?"
+    },
+    "expected_output": {
+      "task": "reflect",
+      "mode": "interpreter",
+      "job": "query",
+      "confidence": 0.85,
+      "rationale": "User analyzing causality of visible data",
+      "extracted_entities": {
+        "metrics": ["margin"],
+        "dimensions": [],
+        "filters": {}
+      }
+    },
+    "metadata": {
+      "category": "reflect_interpreter"
+    }
+  },
+  {
+    "name": "what_scenarios",
+    "inputs": {
+      "message_text": "What scenarios should I monitor for next quarter?"
+    },
+    "expected_output": {
+      "task": "reflect",
+      "mode": "explorer",
+      "job": "simulate",
+      "confidence": 0.85,
+      "rationale": "User seeking forward-looking scenarios",
+      "extracted_entities": {
+        "metrics": [],
+        "dimensions": [],
+        "filters": {},
+        "time_range": "next quarter"
+      }
+    },
+    "metadata": {
+      "category": "reflect_explorer"
+    }
+  },
+  {
+    "name": "schema_join",
+    "inputs": {
+      "message_text": "Customer_id should join to orders.customer_id"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "interpreter",
+      "job": "schema_update",
+      "confidence": 0.9,
+      "rationale": "User describing schema relationship"
+    },
+    "metadata": {
+      "category": "schema_update"
+    }
+  },
+  {
+    "name": "vague_query",
+    "inputs": {
+      "message_text": "show me the data"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "reporter",
+      "job": "clarify",
+      "confidence": 0.4,
+      "rationale": "Query too vague to classify",
+      "clarification_question": "What specific data are you looking for?"
+    },
+    "metadata": {
+      "category": "clarification"
+    }
+  },
+  {
+    "name": "ambiguous_show",
+    "inputs": {
+      "message_text": "show me Apple"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "reporter",
+      "job": "clarify",
+      "confidence": 0.5,
+      "rationale": "Ambiguous - could be various Apple data",
+      "clarification_question": "What Apple data would you like to see?",
+      "extracted_entities": {
+        "metrics": [],
+        "dimensions": [],
+        "filters": {"company": "Apple"}
+      }
+    },
+    "metadata": {
+      "category": "clarification"
+    }
+  },
+  {
+    "name": "general_knowledge",
+    "inputs": {
+      "message_text": "What is the capital of France?"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "reporter",
+      "job": "out_of_scope",
+      "confidence": 0.95,
+      "rationale": "General knowledge question outside BI scope"
+    },
+    "metadata": {
+      "category": "out_of_scope"
+    }
+  },
+  {
+    "name": "help_python",
+    "inputs": {
+      "message_text": "Help me write a Python script"
+    },
+    "expected_output": {
+      "task": "consult",
+      "mode": "reporter",
+      "job": "out_of_scope",
+      "confidence": 0.95,
+      "rationale": "Programming request outside BI scope"
+    },
+    "metadata": {
+      "category": "out_of_scope"
+    }
+  }
+]

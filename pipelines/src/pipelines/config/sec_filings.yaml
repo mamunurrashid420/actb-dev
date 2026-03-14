@@ -1,0 +1,80 @@
+# SEC Filings Configuration
+# Controls which companies and institutions to track, and which filing types to fetch
+#
+# To add new companies:
+# 1. Add company to companies list with ticker and forms
+# 2. Set enabled: true
+# 3. Run `uv run dg check defs` to validate
+# 4. Materialize assets via Dagster UI or CLI
+#
+# Note: Company names, manager names, and other metadata are fetched from SEC,
+# not hard-coded here. This keeps config minimal and avoids maintenance issues.
+
+# =============================================================================
+# GLOBAL SETTINGS
+# =============================================================================
+settings:
+  # SEC identity is now configured via environment variable SEC_IDENTITY
+  # Set in .env file: SEC_IDENTITY="Your Name email@domain.com"
+  # SEC requires this for all API requests - they may contact you if issues arise
+  # No longer configured here - see .env file
+
+  # Partition date ranges (adjust based on storage/compute needs)
+  # Historical filings available back to ~1994, but more data = more compute
+  partition_start_date: "2020-01-01"
+
+  # Retry settings for API failures
+  retry_max_attempts: 3
+  retry_delay_seconds: 60
+
+# =============================================================================
+# COMPANIES TO TRACK
+# =============================================================================
+# For each company, specify:
+# - cik: Central Index Key (SEC's permanent company identifier)
+# - ticker: Stock ticker symbol (for human reference, stored in registry)
+# - name: Company name (for human reference, stored in registry)
+# - forms: List of filing types to fetch [10-K, 10-Q, 8-K, form4]
+#
+# Note: Raw assets are partitioned by CIK (source-native ID)
+#       Semantic assets are partitioned by ticker (friendly ID)
+companies:
+  # Technology
+  - cik: "0000320193"
+    ticker: "AAPL"
+    name: "Apple Inc."
+    forms: [10-K, 10-Q, 8-K, form4]
+
+  - cik: "0000789019"
+    ticker: "MSFT"
+    name: "Microsoft Corporation"
+    forms: [10-K, 10-Q, 8-K]
+
+  # Consumer
+  - cik: "0000829224"
+    ticker: "SBUX"
+    name: "Starbucks Corporation"
+    forms: [10-K, 10-Q, 8-K, form4]
+
+  - cik: "0000063908"
+    ticker: "MCD"
+    name: "McDonald's Corporation"
+    forms: [10-K, 10-Q]
+
+# =============================================================================
+# INSTITUTIONAL INVESTORS (for 13F filings)
+# =============================================================================
+# For each institution, specify:
+# - cik: Central Index Key (SEC's permanent institution identifier)
+# - name: Clean identifier for internal use (lowercase, underscores)
+# - display_name: Human-readable name (for registry and reports)
+#
+# Note: Raw assets are partitioned by CIK (source-native ID)
+institutions:
+  - cik: "0001067983"
+    name: "berkshire_hathaway"
+    display_name: "Berkshire Hathaway Inc."
+
+  - cik: "0001364742"
+    name: "bridgewater_associates"
+    display_name: "Bridgewater Associates"

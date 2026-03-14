@@ -1,0 +1,206 @@
+/**
+ * Semantic Chart Styling
+ *
+ * This CSS maps semantic classifications from the agent to visual styles.
+ * The agent outputs: prominence, purpose, sentiment
+ * The UI applies these via data attributes on chart elements.
+ *
+ * Design reference: Slate-blue dashboard with Inter typography.
+ * - Chart palette: sequential slate-blue (#2E3F5C → #A4BAD4)
+ * - Positive: emerald green #16A34A
+ * - Negative: red-orange #DC2626
+ * - Warning: amber #D97706
+ * - Neutral: slate #64748B
+ *
+ * Usage: Add data attributes to chart elements, e.g.:
+ *   <path data-prominence="primary" data-purpose="data-focus" data-sentiment="positive" />
+ */
+
+/* =============================================================================
+   Prominence → Visual Weight
+   
+   Controls how much attention an element receives.
+   Applied via: data-prominence="value"
+   ============================================================================= */
+
+[data-prominence="hide"] {
+  display: none;
+}
+
+[data-prominence="background"] {
+  opacity: 0.25;
+}
+
+[data-prominence="baseline"] {
+  opacity: 0.55;
+}
+
+[data-prominence="secondary"] {
+  opacity: 0.8;
+}
+
+[data-prominence="primary"] {
+  opacity: 1;
+}
+
+[data-prominence="callout"] {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* =============================================================================
+   Purpose → Line/Stroke Style
+   
+   Controls visual pattern to indicate data function.
+   Applied via: data-purpose="value"
+   ============================================================================= */
+
+[data-purpose="data-focus"] {
+  stroke-dasharray: none;
+}
+
+[data-purpose="data-comparison"] {
+  stroke-dasharray: 4 2;
+}
+
+[data-purpose="data-projection"] {
+  stroke-dasharray: 2 2;
+}
+
+[data-purpose="reference"] {
+  stroke-dasharray: 8 4;
+  stroke-width: 1px;
+}
+
+[data-purpose="structural"] {
+  stroke-width: 1px;
+}
+
+[data-purpose="navigational"] {
+  /* Navigational elements (titles, labels) use default styling */
+}
+
+[data-purpose="annotation"] {
+  /* Annotations may have special styling per component */
+}
+
+/* =============================================================================
+   Sentiment → Color
+   
+   Controls color to indicate evaluative meaning.
+   Applied via: data-sentiment="value"
+   Uses CSS custom properties for theme integration.
+   
+   Colors matched to the design snapshot:
+   - Positive: emerald green (upward arrows, good KPIs)
+   - Negative: red-orange (downward triangles, declining KPIs)
+   - Warning: amber (alert triangles, cost warnings)
+   - Neutral: slate gray (default, non-evaluative data)
+   ============================================================================= */
+
+[data-sentiment="positive"] {
+  --series-color: var(--color-success, #16a34a);
+  --series-color-light: var(--color-success-light, #dcfce7);
+  stroke: var(--series-color);
+  fill: var(--series-color);
+}
+
+[data-sentiment="negative"] {
+  --series-color: var(--color-danger, #dc2626);
+  --series-color-light: var(--color-danger-light, #fee2e2);
+  stroke: var(--series-color);
+  fill: var(--series-color);
+}
+
+[data-sentiment="neutral"] {
+  --series-color: var(--color-neutral, #64748b);
+  --series-color-light: var(--color-neutral-light, #f1f5f9);
+  stroke: var(--series-color);
+  fill: var(--series-color);
+}
+
+[data-sentiment="warning"] {
+  --series-color: var(--color-warning, #d97706);
+  --series-color-light: var(--color-warning-light, #fef3c7);
+  stroke: var(--series-color);
+  fill: var(--series-color);
+}
+
+/* =============================================================================
+   Combined Classifications
+   
+   Some combinations may need specific overrides.
+   ============================================================================= */
+
+/* Primary data with negative sentiment - ensure full visibility */
+[data-prominence="primary"][data-sentiment="negative"] {
+  stroke-width: 2.5px;
+}
+
+/* Primary data with positive sentiment - ensure full visibility */
+[data-prominence="primary"][data-sentiment="positive"] {
+  stroke-width: 2.5px;
+}
+
+/* Callout elements get extra emphasis */
+[data-prominence="callout"][data-purpose="annotation"] {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* Secondary comparison data - slightly thinner stroke */
+[data-prominence="secondary"][data-purpose="data-comparison"] {
+  stroke-width: 1.5px;
+}
+
+/* Projection data - uncertainty indicator */
+[data-prominence="secondary"][data-purpose="data-projection"] {
+  stroke-width: 1.5px;
+  opacity: 0.7;
+}
+
+/* =============================================================================
+   Default Color Variables
+   
+   Sentiment and brand colors derived from the design snapshot.
+   Can be overridden by the design system/theme.
+   ============================================================================= */
+
+:root {
+  /* Success/Positive — emerald green, matches upward arrow indicators */
+  --color-success: #16a34a;
+  --color-success-light: #dcfce7;
+
+  /* Danger/Negative — red, matches downward triangle indicators */
+  --color-danger: #dc2626;
+  --color-danger-light: #fee2e2;
+
+  /* Neutral — slate gray, default non-evaluative color */
+  --color-neutral: #64748b;
+  --color-neutral-light: #f1f5f9;
+
+  /* Warning — amber, matches alert triangle indicators */
+  --color-warning: #d97706;
+  --color-warning-light: #fef3c7;
+
+  /* Primary brand — dark slate-blue, matches chart bar primary color */
+  --color-primary: #3b4f72;
+  --color-primary-light: #cbd5e6;
+}
+
+.dark {
+  --color-success: #4ade80;
+  --color-success-light: #14532d;
+
+  --color-danger: #f87171;
+  --color-danger-light: #450a0a;
+
+  --color-neutral: #94a3b8;
+  --color-neutral-light: #1e293b;
+
+  --color-warning: #fbbf24;
+  --color-warning-light: #451a03;
+
+  --color-primary: #94a8c9;
+  --color-primary-light: #1e293b;
+}

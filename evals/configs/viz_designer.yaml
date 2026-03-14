@@ -1,0 +1,24 @@
+# Visualization Designer Evaluation Configuration
+name: viz_designer_eval
+description: VisualizationDesigner evaluation suite
+
+agent: agents.viz_designer:VisualizationDesigner
+
+prompts:
+  - py://agents.viz_designer.agent:DEFAULT_PROMPT
+
+models:
+  - google:gemini-3-flash-preview
+
+dataset: viz_designer
+
+# Experiment-level assertions (apply to ALL test cases)
+assert:
+  - type: not-null
+    field: chart_type
+  - type: latency-budget
+    max_seconds: 5
+
+tags:
+  - visualization
+  - design

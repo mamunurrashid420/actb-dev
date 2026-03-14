@@ -1,0 +1,47 @@
+# Auto code review on every Pull Request
+# Runs lint (and optional typecheck/test). Fails the PR if any step fails.
+
+name: Code Review
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main, develop]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      # Lint all workspaces that have a "lint" script
+      - name: Lint
+        run: pnpm -r run lint --if-present
+
+      # Format check (optional – uncomment if you use Prettier at root)
+      # - name: Format check
+      #   run: pnpm exec prettier --check .
+
+      # Type check (optional – uncomment for TypeScript projects)
+      # - name: Type check
+      #   run: pnpm -r exec tsc --noEmit --if-present
+
+      # Test – runs on every PR and push to main/develop
+      - name: Test
+        run: pnpm -r run test --if-present

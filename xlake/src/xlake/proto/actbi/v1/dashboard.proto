@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package actbi.v1;
+
+import "actbi/v1/chart_stack.proto";
+import "google/protobuf/timestamp.proto";
+
+// Placement of a single chart inside a dashboard.
+message ChartPlacement {
+  string chart_id = 1;
+  // Level: 1, 2, 3, 4 based on UX Architecture
+  uint32 level = 2;
+  // Optional ordering within each level
+  uint32 order = 3;
+}
+
+// Full layout specification for a dashboard.
+message DashboardLayout {
+  repeated ChartPlacement placements = 1;
+}
+
+// Dashboard: Composition + layout only.
+message Dashboard {
+  string id = 1;
+  string title = 2;
+  string description = 3;
+
+  // Structural composition
+  repeated ChartStack stacks = 4;
+
+  // Presentation only
+  DashboardLayout layout = 5;
+
+  // Metadata
+  google.protobuf.Timestamp created_at = 6;
+  google.protobuf.Timestamp updated_at = 7;
+
+  uint32 schema_version = 8;
+}
+

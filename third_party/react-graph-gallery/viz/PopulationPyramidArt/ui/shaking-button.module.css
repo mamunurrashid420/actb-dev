@@ -1,0 +1,30 @@
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  95% {
+    transform: translateX(5 px);
+  }
+  96% {
+    transform: translateX(-5 px);
+  }
+  97% {
+    transform: translateX(5 px);
+  }
+  98% {
+    transform: translateX(-5 px);
+  }
+  99% {
+    transform: translateX(5 px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.shakeButtonContainer {
+  animation-name: shake;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}

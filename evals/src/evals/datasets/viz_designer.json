@@ -1,0 +1,91 @@
+[
+  {
+    "name": "temporal_trend",
+    "inputs": {
+      "intent": "show me revenue trends over time",
+      "data_shape": "temporal",
+      "fields": ["date", "revenue"]
+    },
+    "expected_output": {
+      "chart_type": "line_chart",
+      "encoding": {
+        "x": "date",
+        "y": "revenue"
+      },
+      "rationale": "Line chart shows temporal trends"
+    },
+    "metadata": {
+      "category": "basic",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "name": "categorical_comparison",
+    "inputs": {
+      "intent": "compare sales by region",
+      "data_shape": "categorical",
+      "fields": ["region", "sales"]
+    },
+    "expected_output": {
+      "chart_type": "bar_chart_vertical",
+      "encoding": {
+        "x": "region",
+        "y": "sales"
+      },
+      "rationale": "Bar chart for categorical comparison"
+    },
+    "metadata": {
+      "category": "basic"
+    }
+  },
+  {
+    "name": "distribution",
+    "inputs": {
+      "intent": "show the distribution of customer ages",
+      "data_shape": "distribution",
+      "fields": ["age", "count"]
+    },
+    "expected_output": {
+      "chart_type": "histogram",
+      "encoding": {
+        "x": "age",
+        "y": "count"
+      },
+      "rationale": "Histogram for distribution"
+    },
+    "metadata": {
+      "category": "basic"
+    }
+  },
+  {
+    "name": "correlation",
+    "inputs": {
+      "intent": "show the relationship between price and quantity sold",
+      "data_shape": "correlation",
+      "fields": ["price", "quantity"]
+    },
+    "expected_output": {
+      "chart_type": "scatter_plot",
+      "encoding": {
+        "x": "price",
+        "y": "quantity"
+      },
+      "rationale": "Scatter plot for correlation"
+    },
+    "metadata": {
+      "category": "basic"
+    }
+  },
+  {
+    "name": "ambiguous_intent",
+    "inputs": {
+      "intent": "show me the data",
+      "data_shape": "categorical",
+      "fields": ["category", "value"]
+    },
+    "expected_output": null,
+    "metadata": {
+      "category": "edge_case"
+    }
+  }
+]

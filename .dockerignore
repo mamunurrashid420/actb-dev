@@ -1,0 +1,30 @@
+# Docker build context for pipelines image: exclude everything except what the Dockerfile needs
+.git
+.venv
+**/__pycache__
+**/.pytest_cache
+**/.dagster
+**/node_modules
+**/.next
+**/out
+**/dist
+**/build
+*.egg-info
+.idea
+*.log
+*.md
+!pipelines/README.md
+# Exclude other workspace members not needed by pipelines
+service
+notebooks
+xlake
+agents
+evals
+web
+third_party
+docs
+*.docx
+.qodo
+pipelines/tests
+pipelines/.dagster-dev
+pipelines/_data

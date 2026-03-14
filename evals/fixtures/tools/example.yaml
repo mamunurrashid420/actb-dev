@@ -1,0 +1,34 @@
+# Example tool fixture file for shared.data functions
+# Used for deterministic testing by mocking search, describe, and get
+
+search:
+  - input: { query: "gdp" }
+    output: ["fred/gdp/usa", "worldbank/gdp"]
+
+  - input: { query: "unemployment" }
+    output: ["bls/unemployment/usa", "fred/unemployment"]
+
+describe:
+  - input: { asset_path: "fred/gdp/usa" }
+    output:
+      is_partitioned: false
+      schema: { date: datetime, value: float }
+      row_count: 1200
+
+  - input: { asset_path: "worldbank/gdp" }
+    output:
+      is_partitioned: true
+      partitions: ["USA", "CHN", "JPN", "DEU"]
+      schema: { date: datetime, value: float, country: string }
+      row_count: 5000
+
+get:
+  - input: { asset_path: "fred/gdp/usa" }
+    output:
+      columns: [date, value]
+      rows: [[2024-01-01, 28.3], [2024-04-01, 28.5], [2024-07-01, 28.7]]
+
+  - input: { asset_path: "worldbank/gdp", partition: "USA" }
+    output:
+      columns: [date, value, country]
+      rows: [[2024-01-01, 28.3, "USA"]]

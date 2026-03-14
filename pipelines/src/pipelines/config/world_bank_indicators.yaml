@@ -1,0 +1,339 @@
+# World Bank API Data Configuration
+# This file controls which countries and indicators are fetched from the World Bank API
+#
+# To add new data:
+# 1. Add country to countries list with enabled: true
+# 2. Add indicator to appropriate category with enabled: true
+# 3. Run `uv run dg check defs` to validate
+# 4. Materialize assets via Dagster UI or CLI
+
+# =============================================================================
+# GLOBAL SETTINGS (defaults for all countries and indicators)
+# =============================================================================
+settings:
+  # Default date range (can be overridden per country or indicator)
+  date_range_start: 1960
+  date_range_end: 2024
+
+  # API settings (can be overridden per indicator)
+  api_timeout_seconds: 30
+  retry_max_attempts: 3
+  retry_delay_seconds: 60
+
+  # Data validation (can be overridden per indicator)
+  allow_negative_values: false
+
+# =============================================================================
+# COUNTRIES
+# =============================================================================
+countries:
+  # Current countries (already implemented)
+  - code: US
+    name: United States
+    region: north_america
+    enabled: true
+
+  - code: CN
+    name: China
+    region: asia
+    enabled: true
+
+  - code: JP
+    name: Japan
+    region: asia
+    enabled: true
+
+  - code: DE
+    name: Germany
+    region: europe
+    enabled: true
+
+  - code: GB
+    name: United Kingdom
+    region: europe
+    enabled: true
+
+  - code: FR
+    name: France
+    region: europe
+    enabled: true
+
+  - code: KR
+    name: South Korea
+    region: asia
+    enabled: true
+
+  - code: IT
+    name: Italy
+    region: europe
+    enabled: true
+
+  - code: GR
+    name: Greece
+    region: europe
+    enabled: true
+
+  - code: EUU
+    name: European Union
+    region: europe
+    enabled: true
+    date_range_start: 1993  # EU formed in 1993
+
+  # New countries
+  - code: CA
+    name: Canada
+    region: north_america
+    enabled: true
+
+  - code: IN
+    name: India
+    region: asia
+    enabled: true
+
+  - code: BR
+    name: Brazil
+    region: south_america
+    enabled: true
+
+  - code: AU
+    name: Australia
+    region: oceania
+    enabled: true
+
+  - code: MX
+    name: Mexico
+    region: north_america
+    enabled: true
+
+  - code: ES
+    name: Spain
+    region: europe
+    enabled: true
+
+  - code: NL
+    name: Netherlands
+    region: europe
+    enabled: true
+
+  - code: RU
+    name: Russia
+    region: europe
+    enabled: true
+    date_range_start: 1990  # Soviet Union dissolved in 1991
+
+  - code: SA
+    name: Saudi Arabia
+    region: middle_east
+    enabled: true
+
+  - code: TR
+    name: Turkey
+    region: europe
+    enabled: true
+
+# =============================================================================
+# INDICATORS
+# =============================================================================
+indicators:
+  # Economic Indicators
+  economic:
+    - code: NY.GDP.MKTP.CD
+      name: gdp
+      display_name: GDP
+      description: GDP (current US$)
+      unit: current_usd
+      enabled: true
+
+    - code: NY.GDP.PCAP.CD
+      name: gdp_per_capita
+      display_name: GDP per Capita
+      description: GDP per capita (current US$)
+      unit: current_usd_per_capita
+      enabled: true
+
+    - code: NY.GDP.MKTP.KD.ZG
+      name: gdp_growth
+      display_name: GDP Growth Rate
+      description: GDP growth (annual %, constant prices)
+      unit: percent_annual
+      allow_negative_values: true
+      enabled: false
+
+    - code: GC.DOD.TOTL.GD.ZS
+      name: debt_pct_gdp
+      display_name: Government Debt
+      description: Central government debt, total (% of GDP)
+      unit: percent_of_gdp
+      date_range_start: 1990
+      enabled: true
+
+    - code: NE.EXP.GNFS.CD
+      name: exports
+      display_name: Exports
+      description: Exports of goods and services (current US$)
+      unit: current_usd
+      enabled: false
+
+    - code: NE.IMP.GNFS.CD
+      name: imports
+      display_name: Imports
+      description: Imports of goods and services (current US$)
+      unit: current_usd
+      enabled: false
+
+    - code: BN.CAB.XOKA.GD.ZS
+      name: current_account_balance
+      display_name: Current Account Balance
+      description: Current account balance (% of GDP)
+      unit: percent_of_gdp
+      allow_negative_values: true
+      enabled: true
+
+    - code: NE.TRD.GNFS.ZS
+      name: trade_pct_gdp
+      display_name: Trade Volume
+      description: Trade (% of GDP)
+      unit: percent_of_gdp
+      enabled: false
+
+  # Unemployment Indicators
+  unemployment:
+    - code: SL.UEM.TOTL.ZS
+      name: unemployment_rate
+      display_name: Unemployment Rate
+      description: Unemployment, total (% of total labor force)
+      unit: percent
+      date_range_start: 1991
+      enabled: true
+
+    - code: SL.UEM.TOTL.NE.ZS
+      name: unemployment_rate_national
+      display_name: Unemployment Rate (National Estimate)
+      description: Unemployment, total (% of total labor force, national estimate)
+      unit: percent
+      date_range_start: 1991
+      enabled: false
+
+    - code: SL.UEM.TOTL.FE.ZS
+      name: unemployment_female
+      display_name: Female Unemployment Rate
+      description: Unemployment, female (% of female labor force)
+      unit: percent
+      date_range_start: 1991
+      enabled: false
+
+    - code: SL.UEM.TOTL.MA.ZS
+      name: unemployment_male
+      display_name: Male Unemployment Rate
+      description: Unemployment, male (% of male labor force)
+      unit: percent
+      date_range_start: 1991
+      enabled: false
+
+    - code: SL.UEM.1524.ZS
+      name: youth_unemployment
+      display_name: Youth Unemployment Rate
+      description: Unemployment, youth total (% of total labor force ages 15-24)
+      unit: percent
+      date_range_start: 1991
+      enabled: false
+
+    - code: SL.EMP.TOTL.SP.ZS
+      name: employment_ratio
+      display_name: Employment-to-Population Ratio
+      description: Employment to population ratio, 15+, total (%)
+      unit: percent
+      date_range_start: 1991
+      enabled: false
+
+  # Inflation Metrics
+  inflation:
+    - code: FP.CPI.TOTL.ZG
+      name: inflation_cpi
+      display_name: CPI Inflation Rate
+      description: Inflation, consumer prices (annual %)
+      unit: percent_annual
+      allow_negative_values: true
+      enabled: true
+
+    - code: FP.CPI.TOTL
+      name: cpi_index
+      display_name: Consumer Price Index
+      description: Consumer price index (2010 = 100)
+      unit: index_2010_base
+      enabled: false
+
+    - code: NY.GDP.DEFL.ZS
+      name: gdp_deflator
+      display_name: GDP Deflator
+      description: GDP deflator (annual %)
+      unit: percent_annual
+      allow_negative_values: true
+      enabled: false
+
+  # Monetary Policy Indicators
+  monetary:
+    - code: FR.INR.RINR
+      name: real_interest_rate
+      display_name: Real Interest Rate
+      description: Real interest rate (%)
+      unit: percent
+      allow_negative_values: true
+      date_range_start: 1961
+      enabled: true
+
+  # Climate-Related Indicators
+  climate:
+    - code: EN.ATM.CO2E.PC
+      name: co2_per_capita
+      display_name: CO2 Emissions per Capita
+      description: CO2 emissions (metric tons per capita)
+      unit: metric_tons_per_capita
+      enabled: true
+
+    - code: EN.ATM.CO2E.KT
+      name: co2_total
+      display_name: Total CO2 Emissions
+      description: CO2 emissions (kt)
+      unit: kilotons
+      enabled: false
+
+    - code: EN.ATM.GHGT.KT.CE
+      name: greenhouse_gas
+      display_name: Total Greenhouse Gas Emissions
+      description: Total greenhouse gas emissions (kt of CO2 equivalent)
+      unit: kilotons_co2_equivalent
+      date_range_start: 1990
+      enabled: false
+
+    - code: AG.LND.FRST.ZS
+      name: forest_area
+      display_name: Forest Area
+      description: Forest area (% of land area)
+      unit: percent
+      date_range_start: 1990
+      enabled: false
+
+    - code: EG.ELC.RNEW.ZS
+      name: renewable_electricity
+      display_name: Renewable Electricity
+      description: Renewable electricity output (% of total electricity output)
+      unit: percent
+      date_range_start: 1990
+      enabled: false
+
+    - code: EG.USE.ELEC.KH.PC
+      name: electricity_consumption
+      display_name: Electricity Consumption per Capita
+      description: Electric power consumption (kWh per capita)
+      unit: kwh_per_capita
+      date_range_start: 1971
+      enabled: false
+
+    - code: EN.ATM.PM25.MC.M3
+      name: air_pollution
+      display_name: PM2.5 Air Pollution
+      description: PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)
+      unit: micrograms_per_cubic_meter
+      date_range_start: 1990
+      enabled: false

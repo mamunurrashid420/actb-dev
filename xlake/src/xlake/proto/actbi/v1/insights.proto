@@ -1,0 +1,139 @@
+syntax = "proto3";
+
+package actbi.v1;
+
+import "google/protobuf/timestamp.proto";
+
+// HighlightType: Type of visual emphasis in charts.
+enum HighlightType {
+  HIGHLIGHT_TYPE_UNSPECIFIED = 0;
+
+  ROW = 1;         // Emphasize specific data rows
+  POINT_SET = 2;   // Emphasize a subset of datapoints
+  THRESHOLD = 3;   // Draw a reference line
+  RANGE = 4;       // Highlight a band or interval
+  POINT = 5;       // Single visual point
+  ANNOTATION = 6;  // Note, event, or marker
+}
+
+// InsightType: Category of observation about data.
+enum InsightType {
+  INSIGHT_TYPE_UNSPECIFIED = 0;
+
+  ALERT = 1;        // Critical issue requiring attention
+  WARNING = 2;      // Potential issue or risk
+  NEGATIVE = 3;     // Underperformance vs expectation
+  NEUTRAL = 4;      // Informational observation
+  POSITIVE = 5;     // Strong performance
+  THUMBS_UP = 6;    // Reinforces a good outcome
+  LIGHTBULB = 7;    // Non-obvious insight
+  ANOMALY = 8;      // Outlier or unexpected behavior
+  TREND = 9;        // Directional change over time
+  COMPARISON = 10;  // Difference vs baseline
+  CONFIRMATION = 11; // Confirms a hypothesis
+}
+
+// RecommendationType: Category of recommended action.
+enum RecommendationType {
+  RECOMMENDATION_TYPE_UNSPECIFIED = 0;
+
+  FYI = 1;            // Informational, no action required
+  REPORT = 2;         // Generate or schedule a report
+  NOTIFICATION = 3;   // Set up an alert or notification
+  EXPORT = 4;         // Export data or artifact
+  SHARE = 5;          // Share with others
+  EXPERIMENT = 6;     // Try an alternative, an A/B scenario, simulation
+  INVESTIGATION = 7;  // Explore deeper
+  ENRICH_DATA = 8;    // Add a data set that is missing
+}
+
+// AnnotationTarget: Scope of an insight or recommendation (1:1 relationship).
+// Exactly one of these should be set.
+message AnnotationTarget {
+  oneof target {
+    string chart_id = 1;        // Single chart
+    string chart_stack_id = 2;  // Chart stack (group of related charts)
+    string dashboard_id = 3;    // Entire dashboard
+  }
+}
+
+// Highlight: Visual instruction for emphasizing data in charts.
+// References data via selectors, not embedded data.
+message Highlight {
+  string id = 1;
+
+  // Type of highlight
+  HighlightType type = 2;
+
+  // Back-reference to owning insight (for UI color coordination)
+  string insight_id = 3;
+
+  // Reference to data slice
+  string chart_data_slice_id = 4;
+
+  // Data selectors
+  repeated string row_ids = 5;
+  map<string, string> field_filters = 6;
+
+  // Threshold/range values
+  double threshold_value = 7;
+  double range_min = 8;
+  double range_max = 9;
+
+  // Human-readable description
+  string description = 10;
+
+  // Field name for threshold/range highlights (e.g., "revenue", "price")
+  string threshold_range_field = 11;
+}
+
+// Recommendation: Call-to-action based on data analysis.
+// Embedded within Insight messages.
+message Recommendation {
+  string id = 1;
+
+  // Type of recommendation
+  RecommendationType type = 2;
+
+  // Short call-to-action
+  string summary = 3;
+
+  // Optional explanation or rationale
+  string detail = 4;
+
+  // Priority level: "high", "medium", "low"
+  string priority = 5;
+
+  // Optional payload for the action (app-specific)
+  map<string, string> action_params = 6;
+}
+
+// Insight: Observation about data with linked visual evidence.
+message Insight {
+  string id = 1;
+
+  // Type of insight
+  InsightType type = 2;
+
+  // Short, user-facing message
+  string summary = 3;
+
+  // Optional longer explanation
+  string detail = 4;
+
+  // Confidence score in [0,1]
+  double confidence = 5;
+
+  // Scope of the insight (chart, chart-stack, or dashboard level)
+  AnnotationTarget target = 6;
+
+  // Linked highlights (by ID, resolved separately)
+  repeated string highlight_ids = 7;
+
+  // Embedded recommendations for this insight
+  repeated Recommendation recommendations = 8;
+
+  // Metadata
+  google.protobuf.Timestamp created_at = 9;
+  uint32 schema_version = 10;
+}

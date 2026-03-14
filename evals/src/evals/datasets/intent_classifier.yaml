@@ -1,0 +1,190 @@
+# IntentClassifier evaluation dataset
+# Tests classification of user queries into task/mode/job dimensions
+
+# === Consult/Reporter cases ===
+- name: show_revenue
+  inputs:
+    message_text: Show Q4 revenue by region
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: reporter }
+    - { type: equals, field: job, value: query }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: consult_reporter
+
+- name: plot_trends
+  inputs:
+    message_text: Plot Apple's revenue over the last 5 years
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: reporter }
+    - { type: equals, field: job, value: visualize }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: consult_reporter
+
+# === Consult/Interpreter cases ===
+- name: explain_trend
+  inputs:
+    message_text: What does this revenue trend mean?
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: interpreter }
+    - { type: equals, field: job, value: query }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: consult_interpreter
+
+# === Consult/Explorer cases ===
+- name: what_related
+  inputs:
+    message_text: What related data should I look at?
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: explorer }
+    - { type: equals, field: job, value: discover }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+  metadata:
+    category: consult_explorer
+
+- name: what_data_available
+  inputs:
+    message_text: What GDP data do you have available?
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: explorer }
+    - { type: equals, field: job, value: discover }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: consult_explorer
+
+# === Reflect/Reporter cases ===
+- name: compare_quarters
+  inputs:
+    message_text: Compare Q4 vs Q3
+  assert:
+    - { type: equals, field: task, value: reflect }
+    - { type: equals, field: mode, value: reporter }
+    - { type: equals, field: job, value: query }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: reflect_reporter
+
+# === Reflect/Interpreter cases ===
+- name: why_churn_rise
+  inputs:
+    message_text: Why did churn rise despite stable pricing?
+  assert:
+    - { type: equals, field: task, value: reflect }
+    - { type: equals, field: mode, value: interpreter }
+    - { type: equals, field: job, value: query }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: reflect_interpreter
+
+- name: what_caused_drop
+  inputs:
+    message_text: What caused this drop in margin?
+  assert:
+    - { type: equals, field: task, value: reflect }
+    - { type: equals, field: mode, value: interpreter }
+    - { type: equals, field: job, value: query }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: reflect_interpreter
+
+# === Reflect/Explorer cases ===
+- name: what_scenarios
+  inputs:
+    message_text: What scenarios should I monitor for next quarter?
+  assert:
+    - { type: equals, field: task, value: reflect }
+    - { type: equals, field: mode, value: explorer }
+    - { type: equals, field: job, value: simulate }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: reflect_explorer
+
+# === Schema update cases ===
+- name: schema_join
+  inputs:
+    message_text: Customer_id should join to orders.customer_id
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: interpreter }
+    - { type: equals, field: job, value: schema_update }
+    - { type: in-range, field: confidence, min: 0.8, max: 1.0 }
+    - { type: not-null, field: rationale }
+  metadata:
+    category: schema_update
+
+# === Clarification cases ===
+- name: vague_query
+  inputs:
+    message_text: show me the data
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: reporter }
+    - { type: equals, field: job, value: clarify }
+    - { type: in-range, field: confidence, min: 0.3, max: 0.5 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: clarification_question }
+  metadata:
+    category: clarification
+
+- name: ambiguous_show
+  inputs:
+    message_text: show me Apple
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: reporter }
+    - { type: equals, field: job, value: clarify }
+    - { type: in-range, field: confidence, min: 0.4, max: 0.6 }
+    - { type: not-null, field: rationale }
+    - { type: not-null, field: clarification_question }
+    - { type: not-null, field: extracted_entities }
+  metadata:
+    category: clarification
+
+# === Out of scope cases ===
+- name: general_knowledge
+  inputs:
+    message_text: What is the capital of France?
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: reporter }
+    - { type: equals, field: job, value: out_of_scope }
+    - { type: in-range, field: confidence, min: 0.9, max: 1.0 }
+    - { type: not-null, field: rationale }
+  metadata:
+    category: out_of_scope
+
+- name: help_python
+  inputs:
+    message_text: Help me write a Python script
+  assert:
+    - { type: equals, field: task, value: consult }
+    - { type: equals, field: mode, value: reporter }
+    - { type: equals, field: job, value: out_of_scope }
+    - { type: in-range, field: confidence, min: 0.9, max: 1.0 }
+    - { type: not-null, field: rationale }
+  metadata:
+    category: out_of_scope

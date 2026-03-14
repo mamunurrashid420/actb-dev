@@ -1,0 +1,11 @@
+.scatterplotCircle {
+    stroke: #9a6fb0;
+    fill: #9a6fb0;
+    fill-opacity: .1;
+}
+svg .scatterplotCircle:hover {
+    opacity: 1;
+    stroke: red;
+    fill: red;
+    fill-opacity: .8;
+}

@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package actbi.v1;
+
+import "google/protobuf/timestamp.proto";
+
+// RefreshPolicy: Controls when chart data should be refreshed.
+// Note: last_refreshed_at is stored in the RDBMS, not in protobuf.
+message RefreshPolicy {
+  // Maximum allowed age of the data in seconds.
+  // max_age_seconds = 0 means "must always be fresh".
+  uint32 max_age_seconds = 1;
+
+  // Whether it is acceptable to serve stale data.
+  // If false and data is stale, a refresh MUST occur.
+  bool allow_stale_reads = 2;
+}
+
+// ChartDataSlice: Metadata linking source input to data processing to output.
+// Lineage + pointer to materialized data.
+message ChartDataSlice {
+  string id = 1;
+
+  string chart_id = 2;
+  uint32 chart_version = 3;
+
+  string data_binding_id = 4;
+  uint32 data_binding_version = 5;
+
+  string output_schema_id = 6;
+
+  // URI to the materialized JSON data
+  string json_uri = 7;
+
+  // Hashes for cache invalidation
+  string data_hash = 8;
+  string schema_hash = 9;
+
+  // Refresh policy for this data slice
+  RefreshPolicy refresh_policy = 10;
+
+  google.protobuf.Timestamp generated_at = 11;
+}
+

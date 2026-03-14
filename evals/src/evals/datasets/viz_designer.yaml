@@ -1,0 +1,65 @@
+# VizDesigner evaluation dataset
+# Tests the agent's ability to recommend appropriate chart types
+
+- name: temporal_trend
+  inputs:
+    intent: show me revenue trends over time
+    data_shape: temporal
+    fields: [date, revenue]
+  assert:
+    - { type: equals, field: chart_type, value: line }
+    - { type: equals, field: encoding.x, value: date }
+    - { type: equals, field: encoding.y, value: revenue }
+    - { type: not-null, field: rationale }
+  metadata:
+    category: basic
+    difficulty: easy
+
+- name: categorical_comparison
+  inputs:
+    intent: compare sales by region
+    data_shape: categorical
+    fields: [region, sales]
+  assert:
+    - { type: equals, field: chart_type, value: bar }
+    - { type: equals, field: encoding.x, value: region }
+    - { type: equals, field: encoding.y, value: sales }
+    - { type: not-null, field: rationale }
+  metadata:
+    category: basic
+
+- name: distribution
+  inputs:
+    intent: show the distribution of customer ages
+    data_shape: distribution
+    fields: [age, count]
+  assert:
+    - { type: equals, field: chart_type, value: histogram }
+    - { type: equals, field: encoding.x, value: age }
+    - { type: equals, field: encoding.y, value: count }
+    - { type: not-null, field: rationale }
+  metadata:
+    category: basic
+
+- name: correlation
+  inputs:
+    intent: show the relationship between price and quantity sold
+    data_shape: correlation
+    fields: [price, quantity]
+  assert:
+    - { type: equals, field: chart_type, value: scatter }
+    - { type: equals, field: encoding.x, value: price }
+    - { type: equals, field: encoding.y, value: quantity }
+    - { type: not-null, field: rationale }
+  metadata:
+    category: basic
+
+- name: ambiguous_intent
+  inputs:
+    intent: show me the data
+    data_shape: categorical
+    fields: [category, value]
+  assert:
+    - { type: is-null, field: chart_type }
+  metadata:
+    category: edge_case

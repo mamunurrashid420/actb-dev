@@ -1,0 +1,1001 @@
+series_id,title,popularity,frequency
+FEDFUNDS,Federal Funds Effective Rate,100,Monthly
+GDP,Gross Domestic Product,94,Quarterly
+GDPC1,Real Gross Domestic Product,94,Quarterly
+DFF,Federal Funds Effective Rate,89,"Daily, 7-Day"
+GFDEGDQ188S,Federal Debt: Total Public Debt as Percent of Gross Domestic Product,87,Quarterly
+RECPROUSM156N,Smoothed U.S. Recession Probabilities,85,Monthly
+PAYEMS,"All Employees, Total Nonfarm",85,Monthly
+PCEPI,Personal Consumption Expenditures: Chain-type Price Index,83,Monthly
+CORESTICKM159SFRBATL,Sticky Price Consumer Price Index less Food and Energy,83,Monthly
+CIVPART,Labor Force Participation Rate,82,Monthly
+PCE,Personal Consumption Expenditures,81,Monthly
+PSAVERT,Personal Saving Rate,80,Monthly
+CES0500000003,"Average Hourly Earnings of All Employees, Total Private",80,Monthly
+ACTLISCOUUS,Housing Inventory: Active Listing Count in the United States,79,Monthly
+JTSJOL,Job Openings: Total Nonfarm,79,Monthly
+A939RX0Q048SBEA,Real gross domestic product per capita,78,Quarterly
+TOTALSA,Total Vehicle Sales,78,Monthly
+PCEPILFE,Personal Consumption Expenditures Excluding Food and Energy (Chain-Type Price Index),77,Monthly
+FYFSGDA188S,Federal Surplus or Deficit [-] as Percent of Gross Domestic Product,76,Annual
+CPALTT01USM657N,Consumer Price Index: All Items: Total for United States,75,Monthly
+PCEC96,Real Personal Consumption Expenditures,75,Monthly
+A191RL1Q225SBEA,Real Gross Domestic Product,75,Quarterly
+GDPDEF,Gross Domestic Product: Implicit Price Deflator,73,Quarterly
+DPCCRV1Q225SBEA,Personal Consumption Expenditures (PCE) Excluding Food and Energy (Chain-Type Price Index),73,Quarterly
+A091RC1Q027SBEA,Federal government current expenditures: Interest payments,73,Quarterly
+DSPIC96,Real Disposable Personal Income,73,Monthly
+FGEXPND,Federal Government: Current Expenditures,73,Quarterly
+USEPUINDXD,Economic Policy Uncertainty Index for United States,73,"Daily, 7-Day"
+FEDTARMD,"FOMC Summary of Economic Projections for the Fed Funds Rate, Median",73,Annual
+BOPGSTB,"Trade Balance: Goods and Services, Balance of Payments Basis",73,Monthly
+GDPNOW,GDPNow,72,Quarterly
+NROU,Noncyclical Rate of Unemployment,71,Quarterly
+UNEMPLOY,Unemployment Level,71,Monthly
+U6RATE,"Total Unemployed, Plus All Persons Marginally Attached to the Labor Force, Plus Total Employed Part Time for Economic Reasons, as a Percent of the Civilian Labor Force Plus All Persons Marginally Attached to the Labor Force (U-6)",71,Monthly
+HTRUCKSSAAR,Motor Vehicle Retail Sales: Heavy Weight Trucks,70,Monthly
+CP,Corporate Profits After Tax (without IVA and CCAdj),69,Quarterly
+STLENI,St. Louis Fed Economic News Index: Real GDP Nowcast,69,Quarterly
+USREC,NBER based Recession Indicators for the United States from the Period following the Peak through the Trough,69,Monthly
+IRLTLT01USM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for United States,69,Monthly
+IRLTLT01JPM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Japan,69,Monthly
+ALTSALES,Light Weight Vehicle Sales: Autos and Light Trucks,68,Monthly
+POPTHM,Population,67,Monthly
+FYONGDA188S,Federal Net Outlays as Percent of Gross Domestic Product,66,Annual
+A229RX0,Real Disposable Personal Income: Per Capita,65,Monthly
+GDPA,Gross Domestic Product,65,Annual
+MABMM301USM189S,Monetary Aggregates and Their Components: Broad Money and Components: M3 for United States,65,Monthly
+GFDGDPA188S,Gross Federal Debt as Percent of Gross Domestic Product,65,Annual
+GPDIC1,Real Gross Private Domestic Investment,64,Quarterly
+TTLHH,Total Households,64,Annual
+COMREPUSQ159N,Commercial Real Estate Prices for United States,64,Quarterly
+FYFRGDA188S,Federal Receipts as Percent of Gross Domestic Product,64,Annual
+DSPI,Disposable Personal Income,64,Monthly
+GPDI,Gross Private Domestic Investment,64,Quarterly
+IRLTLT01DEM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Germany,63,Monthly
+B235RC1Q027SBEA,Federal government current tax receipts: Taxes on production and imports: Customs duties,63,Quarterly
+ACTLISCOUFL,Housing Inventory: Active Listing Count in Florida,63,Monthly
+PCECC96,Real Personal Consumption Expenditures,63,Quarterly
+IRLTLT01GBM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for United Kingdom,63,Monthly
+USSLIND,Leading Index for the United States,63,Monthly
+WEI,Weekly Economic Index (Lewis-Mertens-Stock),62,"Weekly, Ending Saturday"
+NETEXP,Net Exports of Goods and Services,62,Quarterly
+JHGDPBRINDX,GDP-Based Recession Indicator Index,62,Quarterly
+FF,Federal Funds Effective Rate,62,"Weekly, Ending Wednesday"
+FYOIGDA188S,Federal Outlays: Interest as Percent of Gross Domestic Product,62,Annual
+GEPUCURRENT,Global Economic Policy Uncertainty Index: Current Price Adjusted GDP,61,Monthly
+ANFCI,Chicago Fed Adjusted National Financial Conditions Index,61,"Weekly, Ending Friday"
+MEDDAYONMARUS,Housing Inventory: Median Days on Market in the United States,61,Monthly
+DPCERE1Q156NBEA,Shares of gross domestic product: Personal consumption expenditures,60,Quarterly
+W006RC1Q027SBEA,Federal government current tax receipts,60,Quarterly
+PI,Personal Income,60,Monthly
+RTFPNAUSA632NRUG,Total Factor Productivity at Constant National Prices for United States,60,Annual
+IMPGS,Imports of Goods and Services,59,Quarterly
+IMPCH,U.S. Imports of Goods by Customs Basis from China,59,Monthly
+IEABC,Balance on current account,59,Quarterly
+GDPCA,Real Gross Domestic Product,59,Annual
+GNP,Gross National Product,58,Quarterly
+DAUPSA,Domestic Auto Production,58,Monthly
+EXPGS,Exports of Goods and Services,58,Quarterly
+M318501Q027NBEA,Federal government budget surplus or deficit (-),58,Quarterly
+FYGFGDQ188S,Federal Debt Held by the Public as Percent of Gross Domestic Product,58,Quarterly
+VAPGDPMA,Value Added by Industry: Manufacturing as a Percentage of GDP,58,Quarterly
+USALOLITOAASTSAM,Leading Indicators OECD: Leading Indicators: Composite Leading Indicator: Amplitude Adjusted for United States,57,Monthly
+USALOLITONOSTSAM,Composite Leading Indicators: Composite Leading Indicator (CLI) Normalized for United States,57,Monthly
+A191RL1A225NBEA,Real Gross Domestic Product,57,Annual
+A792RC0A052NBEA,Personal income per capita,57,Annual
+RIFSPFFNB,Federal Funds Effective Rate,57,Daily
+PCEC,Personal Consumption Expenditures,57,Quarterly
+LABSHPUSA156NRUG,Share of Labour Compensation in GDP at Current National Prices for United States,57,Annual
+IMP4190,U.S. Imports of Goods by Customs Basis from Ireland,56,Monthly
+LFWA64TTUSM647S,Infra-Annual Labor Statistics: Working-Age Population Total: From 15 to 64 Years for United States,56,Monthly
+AUINSA,Domestic Auto Inventories,56,Monthly
+PMSAVE,Personal Saving,56,Monthly
+USPHCI,Coincident Economic Activity Index for the United States,56,Monthly
+A939RC0A052NBEA,Gross domestic product per capita,56,Annual
+A191RI1Q225SBEA,Gross Domestic Product: Implicit Price Deflator,55,Quarterly
+GDPC1CTM,"FOMC Summary of Economic Projections for the Growth Rate of Real Gross Domestic Product, Central Tendency, Midpoint",55,Annual
+W068RCQ027SBEA,Government total expenditures,55,Quarterly
+GCEC1,Real Government Consumption Expenditures and Gross Investment,55,Quarterly
+IRSTCI01JPM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for Japan,55,Monthly
+IR3TIB01USM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for United States,54,Monthly
+AISRSA,Auto Inventory/Sales Ratio,54,Monthly
+CARGSP,Real Gross Domestic Product: All Industry Total in California,54,Annual
+Q09084USQ507NNBR,Mortgage Delinquency Rates for United States,54,"Quarterly, End of Quarter"
+A053RC1Q027SBEA,National income: Corporate profits before tax (without IVA and CCAdj),54,Quarterly
+PCETRIM12M159SFRBDAL,Trimmed Mean PCE Inflation Rate,54,Monthly
+IRLTLT01CAM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Canada,54,Monthly
+PCEDG,Personal Consumption Expenditures: Durable Goods,54,Monthly
+ACTLISCOUCA,Housing Inventory: Active Listing Count in California,54,Monthly
+M0892AUSM156SNBR,Unemployment Rate for United States,53,Monthly
+PNFIC1,Real Private Nonresidential Fixed Investment,53,Quarterly
+IRLTLT01EZM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Euro Area (19 Countries),53,Monthly
+MEDLISPRIPERSQUFEEUS,Housing Inventory: Median Listing Price per Square Feet in the United States,53,Monthly
+A191RO1Q156NBEA,Real Gross Domestic Product,53,Quarterly
+BOPGTB,"Trade Balance: Goods, Balance of Payments Basis",53,Monthly
+A939RC0Q052SBEA,Gross domestic product per capita,53,Quarterly
+PCECTPI,Personal Consumption Expenditures: Chain-type Price Index,53,Quarterly
+PNFI,Private Nonresidential Fixed Investment,53,Quarterly
+A191RP1Q027SBEA,Gross Domestic Product,53,Quarterly
+USEPUINDXM,Economic Policy Uncertainty Index for United States,52,Monthly
+FYGFD,Gross Federal Debt,52,"Annual, Fiscal Year"
+IIPUSNETIQ,U.S. Net International Investment Position,52,"Quarterly, End of Period"
+CPALTT01USQ657N,Consumer Price Index: All Items: Total for United States,52,Quarterly
+RPI,Real Personal Income,52,Monthly
+M1109BUSM293NNBR,Dow-Jones Industrial Stock Price Index for United States,52,Monthly
+IRLTLT01FRM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for France,52,Monthly
+NA000334Q,Gross Domestic Product,52,Quarterly
+ACTLISCOU38060,"Housing Inventory: Active Listing Count in Phoenix-Mesa-Scottsdale, AZ (CBSA)",52,Monthly
+CSCICP03USM665S,Composite Leading Indicators: Composite Consumer Confidence Amplitude Adjusted for United States,51,Monthly
+PCEDGC96,Real Personal Consumption Expenditures: Durable Goods,51,Monthly
+TTLHHM156N,Household Estimates,51,Monthly
+FGRECPT,Federal Government Current Receipts,51,Quarterly
+BA06RC1A027NBEA,"Total wages and salaries, BLS",51,Annual
+CHNCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for China",51,Monthly
+ACTLISCOU19100,"Housing Inventory: Active Listing Count in Dallas-Fort Worth-Arlington, TX (CBSA)",51,Monthly
+RKNANPUSA666NRUG,Capital Stock at Constant National Prices for United States,51,Annual
+IRLTLT01AUM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Australia,50,Monthly
+RIFSPFFNA,Federal Funds Effective Rate,50,Annual
+ACTLISCOU19740,"Housing Inventory: Active Listing Count in Denver-Aurora-Lakewood, CO (CBSA)",50,Monthly
+ACTLISCOU12420,"Housing Inventory: Active Listing Count in Austin-Round Rock, TX (CBSA)",50,Monthly
+LNS12032194,"Employment Level - Part-Time for Economic Reasons, All Industries",50,Monthly
+FEDTARMDLR,"Longer Run FOMC Summary of Economic Projections for the Fed Funds Rate, Median",50,Not Applicable
+FCTAX,Federal Government: Tax Receipts on Corporate Income,50,Annual
+USRECD,NBER based Recession Indicators for the United States from the Period following the Peak through the Trough,50,"Daily, 7-Day"
+EPUTRADE,Economic Policy Uncertainty Index: Categorical Index: Trade policy,50,Monthly
+NYNGSP,Gross Domestic Product: All Industry Total in New York,50,Annual
+VISASMIDSA,Visa Spending Momentum Index: Discretionary: United States,50,Monthly
+LRUN64TTJPM156S,Infra-Annual Labor Statistics: Unemployment Rate Total: From 15 to 64 Years for Japan,50,Monthly
+A191RD3A086NBEA,Gross domestic product (implicit price deflator),49,Annual
+C307RX1Q020SBEA,Real private fixed investment: Nonresidential: Structures: Manufacturing,49,Quarterly
+PRFIC1,Real Private Residential Fixed Investment,49,Quarterly
+ACTLISCOU45300,"Housing Inventory: Active Listing Count in Tampa-ST. Petersburg-Clearwater, FL (CBSA)",49,Monthly
+IR3TIB01EZM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Euro Area (19 Countries),49,Monthly
+W875RX1,Real personal income excluding current transfer receipts,49,Monthly
+IRLTLT01ITM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Italy,48,Monthly
+IR3TIB01JPM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Japan,48,Monthly
+A006RE1Q156NBEA,Shares of gross domestic product: Gross private domestic investment,48,Quarterly
+CPATAX,Corporate Profits After Tax with Inventory Valuation Adjustment (IVA) and Capital Consumption Adjustment (CCAdj),48,Quarterly
+CHNMAINLANDEPU,Economic Policy Uncertainty Index: Mainland Papers for China,48,Monthly
+IMPGSC1,Real imports of goods and services,48,Quarterly
+GBRCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United Kingdom",48,Monthly
+FDEFX,Federal Government: National Defense Consumption Expenditures and Gross Investment,48,Quarterly
+A792RC0Q052SBEA,Personal income per capita,48,Quarterly
+SPASTT01USM661N,Financial Market: Share Prices for United States,48,Monthly
+ACTLISCOU29820,"Housing Inventory: Active Listing Count in Las Vegas-Henderson-Paradise, NV (CBSA)",47,Monthly
+ACTLISCOU14460,"Housing Inventory: Active Listing Count in Boston-Cambridge-Newton, MA-NH (CBSA)",47,Monthly
+WLEMUINDXD,Equity Market-related Economic Uncertainty Index,47,"Daily, 7-Day"
+GOAI,Gross Output by Industry: All Industries,47,Quarterly
+MEDSQUFEEUS,Housing Inventory: Median Home Size in Square Feet in the United States,47,Monthly
+JPNCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Japan",47,Monthly
+M09086USM156NNBR,"Automobile Direct Loans, Delinquent 30 Days and Over as Percentage of Number Outstanding for United States",47,"Monthly, End of Month"
+LRUNTTTTCAM156S,Infra-Annual Labor Statistics: Unemployment Rate Total: 15 Years or over for Canada,47,Monthly
+TOTALNSA,Total Vehicle Sales,47,Monthly
+USACPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United States",46,Monthly
+M14062USM027NNBR,Total Gold Reserves of Federal Reserve Banks for United States,46,Monthly
+A229RC0A052NBEA,Disposable personal income: Per capita,46,Annual
+PRFI,Private Residential Fixed Investment,46,Quarterly
+RGDPNACNA666NRUG,Real GDP at Constant National Prices for China,46,Annual
+CAPCPI,Per Capita Personal Income in California,46,Annual
+IRLTLT01CHM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Switzerland,46,Monthly
+ACTLISCOU42660,"Housing Inventory: Active Listing Count in Seattle-Tacoma-Bellevue, WA (CBSA)",46,Monthly
+ACTLISCOU26420,"Housing Inventory: Active Listing Count in Houston-the Woodlands-Sugar Land, TX (CBSA)",46,Monthly
+BBKMGDP,Brave-Butters-Kelley Real Gross Domestic Product,46,Monthly
+MEDLISPRIFL,Housing Inventory: Median Listing Price in Florida,46,Monthly
+NETFI,"Balance on Current Account, NIPA's",46,Quarterly
+EXPJP,U.S. Exports of Goods by F.A.S. Basis to Japan,46,Monthly
+ACTLISCOU36740,"Housing Inventory: Active Listing Count in Orlando-Kissimmee-Sanford, FL (CBSA)",45,Monthly
+CCUSMA02TRM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Turkey,45,Monthly
+A679RC1Q027SBEA,Private fixed investment in information processing equipment and software,45,Quarterly
+ACTLISCOU12086,"Housing Inventory: Active Listing Count in Miami-Dade County, FL",45,Monthly
+CCUSMA02RUM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Russia,45,Monthly
+W790RC1Q027SBEA,Net domestic investment: Private: Domestic business,45,Quarterly
+GDI,Gross Domestic Income,45,Quarterly
+EMVOVERALLEMV,Equity Market Volatility Tracker: Overall,45,Monthly
+PAYNSA,"All Employees, Total Nonfarm",45,Monthly
+IR3TIB01GBM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for United Kingdom,45,Monthly
+W019RCQ027SBEA,Federal government total expenditures,45,Quarterly
+IRSTCB01JPM156N,Interest Rates: Immediate Rates (< 24 Hours): Central Bank Rates: Total for Japan,45,Monthly
+GGGDTACNA188N,General government gross debt for China,45,Annual
+PSAVE,Personal Saving,45,Quarterly
+SAUPZPIOILBEGUSD,Breakeven Fiscal Oil Price for Saudi Arabia,45,Annual
+GDPC1MD,"FOMC Summary of Economic Projections for the Growth Rate of Real Gross Domestic Product, Median",45,Annual
+ND000334Q,Real Gross Domestic Product,45,Quarterly
+TXNGSP,Gross Domestic Product: All Industry Total in Texas,45,Annual
+ACTLISCOUTX,Housing Inventory: Active Listing Count in Texas,45,Monthly
+EXPGSC1,Real Exports of Goods and Services,45,Quarterly
+FYPUGDA188S,Gross Federal Debt Held by the Public as Percent of Gross Domestic Product,45,Annual
+A794RX0Q048SBEA,Real personal consumption expenditures per capita,45,Quarterly
+ACTLISCOU6037,"Housing Inventory: Active Listing Count in Los Angeles County, CA",44,Monthly
+L312041A027NBEA,Government subsidies: Federal: Agricultural,44,Annual
+USRECDM,NBER based Recession Indicators for the United States from the Peak through the Trough,44,"Daily, 7-Day"
+IRSTCB01CAM156N,Interest Rates: Immediate Rates (< 24 Hours): Central Bank Rates: Total for Canada,44,Monthly
+BOPTEXP,"Exports of Goods and Services, Balance of Payments Basis",44,Monthly
+LTOTALNSA,Light Weight Vehicle Sales,44,Monthly
+PCESC96,Real Personal Consumption Expenditures: Services,44,Monthly
+PCES,Personal Consumption Expenditures: Services,44,Monthly
+A072RC1Q156SBEA,Personal saving as a percentage of disposable personal income,44,Quarterly
+NGMP35620,"Total Gross Domestic Product for New York-Newark-Jersey City, NY-NJ-PA (MSA)",44,Annual
+GPSAVE,Gross Private Saving,44,Quarterly
+GOMA,Gross Output by Industry: Manufacturing,43,Quarterly
+NETEXC,Real Net Exports of Goods and Services,43,Quarterly
+DGDSRX1,Real Personal Consumption Expenditures: Goods,43,Monthly
+CCUSMA02EZM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Euro Area (19 Countries),43,Monthly
+W273RE1A156NBEA,"Shares of gross domestic income: Corporate profits with inventory valuation and capital consumption adjustments, domestic industries: Profits after tax with inventory valuation and capital consumption adjustments",43,Annual
+ARGCPALTT01GPM,Consumer Price Index: All Items: Total for Argentina,43,Monthly
+STICKCPIM157SFRBATL,Sticky Price Consumer Price Index,43,Monthly
+B230RC0A052NBEA,Population,43,Annual
+DPI,Disposable Personal Income,43,Quarterly
+ACTLISCOU6073,"Housing Inventory: Active Listing Count in San Diego County, CA",43,Monthly
+M0264AUSM500NNBR,New Home Mortgage Applications for United States,43,Monthly
+W398RC1A027NBEA,Household saving,43,Annual
+AVHWPEUSA065NRUG,Average Annual Hours Worked by Persons Engaged for United States,43,Annual
+IGREA,Index of Global Real Economic Activity,43,Monthly
+IRLTLT01KRM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Korea,43,Monthly
+EUEPUINDXM,Economic Policy Uncertainty Index for Europe,42,Monthly
+A466RD3Q052SBEA,Profit per unit of real gross value added of nonfinancial corporate business: Corporate profits after tax with IVA and CCAdj (unit profits from current production),42,Quarterly
+CPALTT01CNM657N,Consumer Price Index: All Items: Total for China,42,Monthly
+LFWA64TTJPM647S,Infra-Annual Labor Statistics: Working-Age Population Total: From 15 to 64 Years for Japan,42,Monthly
+CHNGDPNQDSMEI,National Accounts: GDP by Expenditure: Current Prices: Gross Domestic Product: Total for China,42,Quarterly
+BSCICP02USM460S,Business Tendency Surveys (Manufacturing): Confidence Indicators: Composite Indicators: National Indicator for United States,42,Monthly
+INDCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for India",42,Monthly
+B4701C0A222NBEA,Hours worked by full-time and part-time employees,42,Annual
+RTFPNACNA632NRUG,Total Factor Productivity at Constant National Prices for China,42,Annual
+HBFIGDQ188S,Federal Debt Held by Foreign and International Investors as Percent of Gross Domestic Product,42,Quarterly
+DFXARC1M027SBEA,Personal consumption expenditures: Food,42,Monthly
+FPI,Fixed Private Investment,42,Quarterly
+A191RP1A027NBEA,Gross Domestic Product,41,Annual
+GGGDTAJPA188N,General government gross debt for Japan,41,Annual
+CPGDPAI,Contributions to Percent Change in Real GDP by Industry: Gross Domestic Product,41,Quarterly
+CSCICP02CNM460S,Consumer Opinion Surveys: Composite Consumer Confidence for China,41,Monthly
+W207RC1Q156SBEA,Net saving as a percentage of gross national income,41,Quarterly
+PB0000091Q225SBEA,Real Average of GDP and GDI,41,Quarterly
+BSCICP03USM665S,Composite Leading Indicators: Composite Business Confidence Amplitude Adjusted for United States,41,Monthly
+IRNNXGOCMBD,"Crude Oil Exports for Iran, Islamic Republic of",41,Annual
+IEABCP,Balance on capital account,41,Quarterly
+NGMP41860,"Total Gross Domestic Product for San Francisco-Oakland-Hayward, CA (MSA)",41,Annual
+IR3TCD01USM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Certificates of Deposit: Total for United States,41,Monthly
+IMPJP,U.S. Imports of Goods by Customs Basis from Japan,41,Monthly
+M09075USM476NNBR,Nonfarm Real Estate Foreclosures for United States,41,Monthly
+NGMP31080,"Total Gross Domestic Product for Los Angeles-Long Beach-Anaheim, CA (MSA)",41,Annual
+ACTLISCOU39580,"Housing Inventory: Active Listing Count in Raleigh, NC (CBSA)",40,Monthly
+ACTLISCOU12060,"Housing Inventory: Active Listing Count in Atlanta-Sandy Springs-Roswell, GA (CBSA)",40,Monthly
+DAUTOSAAR,Motor Vehicle Retail Sales: Domestic Autos,40,Monthly
+DHLCRC1Q027SBEA,Personal consumption expenditures: Services: Health care,40,Quarterly
+FEDTARRL,"FOMC Summary of Economic Projections for the Fed Funds Rate, Range, Low",40,Annual
+LREM64TTUSM156S,Infra-Annual Labor Statistics: Employment Rate Total: From 15 to 64 Years for United States,40,Monthly
+VAPGDPFI,"Value Added by Industry: Finance, Insurance, Real Estate, Rental, and Leasing: Finance and Insurance as a Percentage of GDP",40,Quarterly
+CRESTKCPIXSLTRM159SFRBATL,"Sticky Price Consumer Price Index less Food, Energy, and Shelter",40,Monthly
+CPALTT01JPM657N,Consumer Price Index: All Items: Total for Japan,40,Monthly
+MEDLISPRIMA,Housing Inventory: Median Listing Price in Massachusetts,40,Monthly
+CHNMAINLANDTPU,Trade Policy Uncertainty Index: Mainland Papers for China,40,Monthly
+GGSAVE,Gross Government Saving,40,Quarterly
+DPCERD3Q086SBEA,Personal consumption expenditures (implicit price deflator),40,Quarterly
+CPROFIT,Corporate Profits with Inventory Valuation Adjustment (IVA) and Capital Consumption Adjustment (CCAdj),40,Quarterly
+UNRATEMD,"FOMC Summary of Economic Projections for the Civilian Unemployment Rate, Median",40,Annual
+CPALTT01USA657N,Consumer Price Index: All Items: Total for United States,39,Annual
+IRLTLT01ESM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Spain,39,Monthly
+RPIPCUS,Real Per Capita Personal Income for United States,39,Annual
+DPCCRV1A225NBEA,Personal Consumption Expenditures (PCE) Excluding Food and Energy (chain-type price index),39,Annual
+B1448C1A027NBEA,"Net farm income, USDA",39,Annual
+B069RC1,Personal interest payments,39,Monthly
+IRLTLT01USQ156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for United States,39,Quarterly
+IR3TIB01DEM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Germany,39,Monthly
+LB0000031Q020SBEA,Real Final Sales to Private Domestic Purchasers,39,Quarterly
+EXPCH,U.S. Exports of Goods by F.A.S. Basis to Mainland China,39,Monthly
+CPALTT01USQ661S,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United States",39,Quarterly
+GCE,Government Consumption Expenditures and Gross Investment,39,Quarterly
+LRHUTTTTDEM156S,Infra-Annual Labor Statistics: Monthly Unemployment Rate Total: 15 Years or over for Germany,39,Monthly
+CPALTT01CNM659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for China",39,Monthly
+SAUNGDPMOMBD,Crude Oil Production for Saudi Arabia,39,Annual
+PCEND,Personal Consumption Expenditures: Nondurable Goods,39,Monthly
+IR3TTS01CNM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Treasury Securities: Total for China,39,Monthly
+A261RL1Q225SBEA,Real Gross Domestic Income,39,Quarterly
+CANQGSP,Gross Domestic Product: All Industry Total in California,39,Quarterly
+NGMP16980,"Total Gross Domestic Product for Chicago-Naperville-Elgin, IL-IN-WI (MSA)",39,Annual
+ACTLISCOU12011,"Housing Inventory: Active Listing Count in Broward County, FL",39,Monthly
+ACTLISCOU16740,"Housing Inventory: Active Listing Count in Charlotte-Concord-Gastonia, NC-SC (CBSA)",39,Monthly
+A822RE1Q156NBEA,Shares of gross domestic product: Government consumption expenditures and gross investment,39,Quarterly
+PCDG,Personal Consumption Expenditures: Durable Goods,39,Quarterly
+BOPTIMP,Imports of Goods and Services: Balance of Payments Basis,38,Monthly
+USAGDPRQPSMEI,National Accounts: GDP by Expenditure: Constant Prices: Gross Domestic Product: Total for United States,38,Quarterly
+JCXFE,Personal Consumption Expenditures: Chain-type Price Index Less Food and Energy,38,Quarterly
+CPALTT01DEM659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Germany",38,Monthly
+GGGDTADEA188N,General government gross debt for Germany,38,Annual
+TRP6001A027NBEA,Government social benefits: to persons: Federal: Supplemental Nutrition Assistance Program (SNAP),38,Annual
+HLTHSCPCHCSA,Health Expenditures per Capita,38,Annual
+CPALTT01GBM657N,Consumer Price Index: All Items: Total for United Kingdom,38,Monthly
+IMPMX,U.S. Imports of Goods by Customs Basis from Mexico,38,Monthly
+AUSGDPRQDSMEI,National Accounts: GDP by Expenditure: Constant Prices: Gross Domestic Product: Total for Australia,38,Quarterly
+IR3TBB01AUM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Bank Bills: Total for Australia,38,Monthly
+IR3TIB01CNM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for China,37,Monthly
+M1490AUSM157SNBR,Total Money Supply for United States,37,Monthly
+CORESTICKM158SFRBATL,Sticky Price Consumer Price Index less Food and Energy,37,Monthly
+LTRUCKSA,Motor Vehicle Retail Sales: Light Weight Trucks,37,Monthly
+DPCERY2Q224SBEA,Contributions to percent change in real gross domestic product: Personal consumption expenditures,37,Quarterly
+Y033RX1Q020SBEA,Real Gross Private Domestic Investment: Fixed Investment: Nonresidential: Equipment,37,Quarterly
+FEDTARCTM,"FOMC Summary of Economic Projections for the Fed Funds Rate, Central Tendency, Midpoint",37,Annual
+USRECDP,NBER based Recession Indicators for the United States from the Peak through the Period preceding the Trough,37,"Daily, 7-Day"
+DPCERL1Q225SBEA,Real Personal Consumption Expenditures,37,Quarterly
+PCETRIM1M158SFRBDAL,Trimmed Mean PCE Inflation Rate,37,Monthly
+SLEXPND,State and Local Government Current Expenditures,37,Quarterly
+PCECA,Personal Consumption Expenditures,37,Annual
+A019RE1Q156NBEA,Shares of gross domestic product: Net exports of goods and services,37,Quarterly
+CPALTT01USM659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United States",37,Monthly
+IR3TIB01NOM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Norway,37,Monthly
+ACTLISCOU16980,"Housing Inventory: Active Listing Count in Chicago-Naperville-Elgin, IL-IN-WI (CBSA)",37,Monthly
+USMANRQGSP,Real Gross Domestic Product: Manufacturing (31-33) in the United States,37,Quarterly
+W270RE1A156NBEA,"Shares of gross domestic income: Compensation of employees, paid: Wage and salary accruals: Disbursements: to persons",37,Annual
+FLNGSP,Gross Domestic Product: All Industry Total in Florida,37,Annual
+DGDSRC1,Personal Consumption Expenditures: Goods,37,Monthly
+G160371A027NBEA,Government current expenditures: Income security: Welfare and social services,37,Annual
+USAGFCFQDSNAQ,Gross Fixed Capital Formation in United States,37,Quarterly
+W823RC1,Personal current transfer receipts: Government social benefits to persons: Social security,36,Monthly
+PCECTPICTM,"FOMC Summary of Economic Projections for the Personal Consumption Expenditures Inflation Rate, Central Tendency, Midpoint",36,Annual
+B096RC1Q027SBEA,Federal government current expenditures: Subsidies,36,Quarterly
+DPIC96,Real Disposable Personal Income,36,Quarterly
+LRUN64TTJPQ156S,Infra-Annual Labor Statistics: Unemployment Rate Total: From 15 to 64 Years for Japan,36,Quarterly
+M1329AUSM193NNBR,"Yields on Short-Term United States Securities, Three-Six Month Treasury Notes and Certificates, Three Month Treasury Bills for United States",36,Monthly
+A576RC1,"Compensation of Employees, Received: Wage and Salary Disbursements",36,Monthly
+AREPCPIPCHPT,Consumer Price Inflation for United Arab Emirates,36,Annual
+MEDLISPRI12420,"Housing Inventory: Median Listing Price in Austin-Round Rock, TX (CBSA)",36,Monthly
+B235RC1A027NBEA,Federal government current tax receipts: Taxes on production and imports: Customs duties,36,Annual
+NGMP19100,"Total Gross Domestic Product for Dallas-Fort Worth-Arlington, TX (MSA)",36,Annual
+A229RX0A048NBEA,Real Disposable Personal Income: Per Capita,36,Annual
+GDPC1CTMLR,"Longer Run FOMC Summary of Economic Projections for the Growth Rate of Real Gross Domestic Product, Central Tendency, Midpoint",36,Not Applicable
+NEWLISCOUNJ,Housing Inventory: New Listing Count in New Jersey,36,Monthly
+MABMM301EZM189S,Monetary Aggregates and Their Components: Broad Money and Components: M3 for Euro Area (19 Countries),36,Monthly
+PCESV,Personal Consumption Expenditures: Services,36,Quarterly
+LRAC64TTJPQ156S,Infra-Annual Labor Statistics: Labor Force Participation Rate Total: From 15 to 64 Years for Japan,36,Quarterly
+ACTLISCOUNY,Housing Inventory: Active Listing Count in New York,36,Monthly
+CCUSMA02CNM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for China,36,Monthly
+PCND,Personal Consumption Expenditures: Nondurable Goods,36,Quarterly
+IRLTLT01NLM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Netherlands,36,Monthly
+IRSTCB01CAQ156N,Interest Rates: Immediate Rates (< 24 Hours): Central Bank Rates: Total for Canada,36,Quarterly
+LCULMN01USQ661S,Labor Compensation: Unit Labor Cost: Manufacturing: Total for United States,35,Quarterly
+B087RC1Q027SBEA,Federal government current transfer payments: Government social benefits: to persons,35,Quarterly
+BPCCRO1Q156NBEA,Personal Consumption Expenditures Excluding Food and Energy (Chain-Type Price Index),35,Quarterly
+MEDDAYONMARFL,Housing Inventory: Median Days on Market in Florida,35,Monthly
+MEDLISPRIUS,Housing Inventory: Median Listing Price in the United States,35,Monthly
+LRHUTTTTGBM156S,Infra-Annual Labor Statistics: Monthly Unemployment Rate Total: 15 Years or over for United Kingdom,35,Monthly
+ACTLISCOU47900,"Housing Inventory: Active Listing Count in Washington-Arlington-Alexandria, DC-VA-MD-WV (CBSA)",35,Monthly
+IRLTLT01MXM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Mexico,35,Monthly
+ACTLISCOUNJ,Housing Inventory: Active Listing Count in New Jersey,35,Monthly
+GGGDTAARA188N,General government gross debt for Argentina,35,Annual
+VISASMIHSA,Visa Spending Momentum Index: Headline: United States,35,Monthly
+A261RX1Q020SBEA,Real gross domestic income,35,Quarterly
+MEDLISPRI19100,"Housing Inventory: Median Listing Price in Dallas-Fort Worth-Arlington, TX (CBSA)",35,Monthly
+IR3TIB01CAM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Canada,35,Monthly
+AUSCPIALLQINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Australia",35,Quarterly
+LRAC25MAUSM156S,Infra-Annual Labor Statistics: Labor Force Participation Rate Male: From 25 to 54 Years for United States,35,Monthly
+B230RC0Q173SBEA,Population,35,Quarterly
+ALPCPI,Per Capita Personal Income in Alabama,35,Annual
+ACTLISCOUCT,Housing Inventory: Active Listing Count in Connecticut,35,Monthly
+HTRUCKSSA,Motor Vehicle Retail Sales: Heavy Weight Trucks,35,Monthly
+LAUTOSA,Motor Vehicle Retail Sales: Domestic and Foreign Autos,35,Monthly
+A4002E1A156NBEA,"Shares of gross domestic income: Compensation of employees, paid",35,Annual
+NYPCPI,Per Capita Personal Income in New York,35,Annual
+CPALCY01CAM661N,Consumer Price Index: All Items: City: Total for Canada,34,Monthly
+FEDTARRM,"FOMC Summary of Economic Projections for the Fed Funds Rate, Range, Midpoint",34,Annual
+LRAC25FEUSM156S,Infra-Annual Labor Statistics: Labor Force Participation Rate Female: From 25 to 54 Years for United States,34,Monthly
+IRLTLT01GRM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Greece,34,Monthly
+IR3TIB01AUM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Australia,34,Monthly
+NFCINONFINLEVERAGE,Chicago Fed National Financial Conditions Index Nonfinancial Leveral Subindex,34,"Weekly, Ending Friday"
+NGMP14460,"Total Gross Domestic Product for Boston-Cambridge-Newton, MA-NH (MSA)",34,Annual
+IR3TIB01CHM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Switzerland,34,Monthly
+TXRQGSP,Real Gross Domestic Product: All Industry Total in Texas,34,Quarterly
+G160291A027NBEA,Government current expenditures: Education,34,Annual
+GDPCTPI,Gross Domestic Product: Chain-type Price Index,34,Quarterly
+ACTLISCOUCO,Housing Inventory: Active Listing Count in Colorado,34,Monthly
+TURCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Turkiye",34,Monthly
+VAPGDPC,Value Added by Industry: Construction as a Percentage of GDP,34,Quarterly
+BOPGEXP,"Exports of Goods, Balance of Payments Basis",34,Monthly
+CPHPTT01EZM659N,Consumer Price Index: Harmonised Prices: All Items: Total for the Euro Area (19 Countries),34,Monthly
+TTLFMCU,Total Families with Children under 18 Years Old,34,Annual
+RVAMA,Real Value Added by Industry: Manufacturing,34,Quarterly
+IEAMGSN,Imports of goods and services,33,Quarterly
+DCAFRC1A027NBEA,"Personal consumption expenditures: Clothing, footwear, and related services",33,Annual
+DEUCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Germany",33,Monthly
+MEDLISPRI6037,"Housing Inventory: Median Listing Price in Los Angeles County, CA",33,Monthly
+IRLTLT01SEM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Sweden,33,Monthly
+PINCOME,Personal Income,33,Quarterly
+ACTLISCOU34980,"Housing Inventory: Active Listing Count in Nashville-Davidson--Murfreesboro--Franklin, TN (CBSA)",33,Monthly
+JPNPCPIPCPPPT,Prices: Consumer Price Index for Japan,33,Annual
+BOPGIMP,Imports of Goods: Balance of Payments Basis,33,Monthly
+IRLTLT01ZAM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for South Africa,33,Monthly
+XTEXVA01CNM667S,International Merchandise Trade Statistics: Exports: Commodities for China,33,Monthly
+IMP5520,U.S. Imports of Goods by Customs Basis from Vietnam,33,Monthly
+M11007USM322NNBR,"Index of Common Stock Prices, New York Stock Exchange for United States",33,Monthly
+USPCE,Personal Consumption Expenditures: Total for United States,33,Annual
+CCUSMA02TRA618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Turkey,33,Annual
+A04018GB00LONA286NNBR,"Price of Bar Silver for London, Great Britain",33,Annual
+LRUN64TTZAQ156S,Infra-Annual Labor Statistics: Unemployment Rate Total: From 15 to 64 Years for South Africa,33,Quarterly
+IEAXGS,Exports of goods and services,33,Quarterly
+BBKMLEIX,Brave-Butters-Kelley Leading Index,33,Monthly
+GGGDTAGRC188N,General government gross debt for Greece,33,Annual
+LABSHPCNA156NRUG,Share of Labour Compensation in GDP at Current National Prices for China,33,Annual
+MEDLISPRICA,Housing Inventory: Median Listing Price in California,33,Monthly
+FPIC1,Real Private Fixed Investment,33,Quarterly
+CPALTT01AUQ657N,Consumer Price Index: All Items: Total for Australia,32,Quarterly
+GGGDTAITA188N,General government gross debt for Italy,32,Annual
+NGMP33100,"Total Gross Domestic Product for Miami-Fort Lauderdale-West Palm Beach, FL (MSA)",32,Annual
+EXPGSCA,Real Exports of Goods and Services,32,Annual
+CCUSSP02IDM650N,"Currency Conversions: US Dollar Exchange Rate: Spot, End of Period: National Currency: USD for Indonesia",32,Monthly
+GSAVE,Gross Saving,32,Quarterly
+PCESVC96,Real Personal Consumption Expenditures: Services,32,Quarterly
+Q0892BUSQ156SNBR,Unemployment Rate for United States,32,Quarterly
+GEPUPPP,Global Economic Policy Uncertainty Index: PPP-Adjusted GDP,32,Monthly
+LDGUST,"Liabilities: Deposits: Government, U.S. Treasury -- General Account",32,"Weekly, Ending Wednesday"
+EPUMONETARY,Economic Policy Uncertainty Index: Categorical Index: Monetary policy,32,Monthly
+ACTLISCOUUT,Housing Inventory: Active Listing Count in Utah,32,Monthly
+CANCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Canada",32,Monthly
+USASLRTCR03MLSAM,Sales: Retail Trade: Car Registration: Passenger Cars for United States,32,Monthly
+NGMP12420,"Total Gross Domestic Product for Austin-Round Rock, TX (MSA)",32,Annual
+CORESTICKM157SFRBATL,Sticky Price Consumer Price Index less Food and Energy,32,Monthly
+DHLCRG3Q086SBEA,Personal consumption expenditures: Services: Health care (chain-type price index),32,Quarterly
+C307RC1Q027SBEA,Private fixed investment: Nonresidential: Structures: Manufacturing,32,Quarterly
+B935RC1Q027SBEA,Private fixed investment: Nonresidential: Information processing equipment and software: Computers and peripheral equipment,32,Quarterly
+ACTLISCOU41860,"Housing Inventory: Active Listing Count in San Francisco-Oakland-Hayward, CA (CBSA)",32,Monthly
+G160461A027NBEA,Government current expenditures: Federal: National defense,32,Annual
+RGDPNAVEA666NRUG,Real GDP at Constant National Prices for Bolivarian Republic of Venezuela,32,Annual
+USABCAGDPBP6,Balance of Payments: Current account balance (credit less debit) for United States,32,Annual
+LNS12032195,"Employment Level - Part-Time for Economic Reasons, Slack Work or Business Conditions, All Industries",32,Monthly
+USRECM,NBER based Recession Indicators for the United States from the Peak through the Trough,32,Monthly
+B075RC1Q027SBEA,Federal government current tax receipts: Taxes on corporate income,31,Quarterly
+LRHUTTTTFRM156S,Infra-Annual Labor Statistics: Monthly Unemployment Rate Total: 15 Years or over for France,31,Monthly
+NGMP42660,"Total Gross Domestic Product for Seattle-Tacoma-Bellevue, WA (MSA)",31,Annual
+A074RC1Q027SBEA,Federal government current tax receipts: Personal current taxes,31,Quarterly
+GGGDTAUSA188N,General government gross debt for United States,31,Annual
+NGMP12060,"Total Gross Domestic Product for Atlanta-Sandy Springs-Roswell, GA (MSA)",31,Annual
+NGMP19820,"Total Gross Domestic Product for Detroit-Warren-Dearborn, MI (MSA)",31,Annual
+A180RC1Q027SBEA,Government current expenditures: Interest payments,31,Quarterly
+A794RC0Q052SBEA,Personal consumption expenditures per capita,31,Quarterly
+EMVMACROBUS,Equity Market Volatility Tracker: Macroeconomic News and Outlook: Business Investment And Sentiment,31,Monthly
+PB0000031Q225SBEA,Real final sales to private domestic purchasers,31,Quarterly
+ACTLISCOU6059,"Housing Inventory: Active Listing Count in Orange County, CA",31,Monthly
+IRLTLT01DKM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Denmark,31,Monthly
+GGGDTAGBA188N,General government gross debt for United Kingdom,31,Annual
+PCENDC96,Real Personal Consumption Expenditures: Nondurable Goods,31,Monthly
+CPALTT01DEM657N,Consumer Price Index: All Items: Total for Germany,31,Monthly
+IR3TIB01ZAM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for South Africa,31,Monthly
+VAPGDPAFH,"Value Added by Industry: Agriculture, Forestry, Fishing, and Hunting as a Percentage of GDP",31,Quarterly
+A08139USA052NNBR,"Laborers' Average Hourly Rate of Wages, Weighted for United States",31,Annual
+IRLTLT01JPA156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Japan,31,Annual
+ACTLISCOUAZ,Housing Inventory: Active Listing Count in Arizona,31,Monthly
+XTEITT01CNM156S,International Trade: Ratio: Exports to Imports: Total for China,31,Monthly
+PCDGCC96,Real Personal Consumption Expenditures: Durable Goods,31,Quarterly
+RGDPNAARA666NRUG,Real GDP at Constant National Prices for Argentina,31,Annual
+IR3TBB01AUQ156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Bank Bills: Total for Australia,31,Quarterly
+VISASMIDNSA,Visa Spending Momentum Index: Discretionary: United States,31,Monthly
+G160851A027NBEA,Government current expenditures: State and local: Public order and safety: Police,31,Annual
+B651RC1Q027SBEA,"Imports of goods: Automotive vehicles, engines, and parts",31,Quarterly
+NGANGDPRPCPPPT,Real Gross Domestic Product for Nigeria,31,Annual
+IRLTLT01GBQ156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for United Kingdom,31,Quarterly
+GNPDEF,Gross National Product: Implicit Price Deflator,31,Quarterly
+PCENOW,Nowcast for Real Personal Consumption Expenditures,31,Quarterly
+CPALTT01CAM657N,Consumer Price Index: All Items: Total for Canada,31,Monthly
+RGDPNAJPA666NRUG,Real GDP at Constant National Prices for Japan,30,Annual
+NGMP37980,"Total Gross Domestic Product for Philadelphia-Camden-Wilmington, PA-NJ-DE-MD (MSA)",30,Annual
+A019RE1A156NBEA,Shares of gross domestic product: Net exports of goods and services,30,Annual
+IR3TIB01MXM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Mexico,30,Monthly
+IMPGSCA,Real Imports of Goods and Services,30,Annual
+A229RC0,Disposable Personal Income: Per capita: Current dollars,30,Monthly
+DFDHRC1Q027SBEA,Personal consumption expenditures: Durable goods: Furnishings and durable household equipment,30,Quarterly
+PCECCA,Real Personal Consumption Expenditures,30,Annual
+M08343USM232SNBR,"Real Average Hourly Earnings, Production Workers, Manufacturing for United States",30,Monthly
+IDNCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Indonesia",30,Monthly
+ACTLISCOUMA,Housing Inventory: Active Listing Count in Massachusetts,30,Monthly
+WANGSP,Gross Domestic Product: All Industry Total in Washington,30,Annual
+DMOTRC1Q027SBEA,Personal consumption expenditures: Durable goods: Motor vehicles and parts,30,Quarterly
+RTFPNAJPA632NRUG,Total Factor Productivity at Constant National Prices for Japan,30,Annual
+Y694RC1Q027SBEA,Gross Domestic Product: Research and Development,30,Quarterly
+W987RC1Q027SBEA,Gross private domestic investment: Domestic business,30,Quarterly
+EURORECD,OECD based Recession Indicators for Euro Area from the Period following the Peak through the Trough (DISCONTINUED),30,"Daily, 7-Day"
+B181RC1Q027SBEA,Exports of agricultural goods,30,Quarterly
+A014RY2Q224SBEA,Contributions to percent change in real gross domestic product: Gross private domestic investment: Change in private inventories,30,Quarterly
+CSCICP02GBM460S,Consumer Opinion Surveys: Composite Consumer Confidence for United Kingdom,30,Monthly
+W986RC1Q027SBEA,Net private saving: Households and institutions,30,Quarterly
+DPCCRG3A086NBEA,Personal consumption expenditures excluding food and energy (chain-type price index),30,Annual
+LRHUTTTTEZM156S,Harmonised Unemployment - Monthly Rates: Total: All Persons for the Euro Area (19 Countries),30,Monthly
+RGDPNARUA666NRUG,Real GDP at Constant National Prices for Russian Federation,30,Annual
+CCUSMA02CLM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Chile,30,Monthly
+MAPCPI,Per Capita Personal Income in Massachusetts,30,Annual
+IRSTFR01USM156N,Interest Rates: Immediate Rates (< 24 Hours): Federal Funds Rate: Total for United States,30,Monthly
+VNMPCPIPCPPPT,Prices: Consumer Price Index for Vietnam,30,Annual
+USEPUFEARINDX,Migration Fear Index for the United States,30,Quarterly
+NCNGSP,Gross Domestic Product: All Industry Total in North Carolina,30,Annual
+DPCCRC1M027SBEA,Personal consumption expenditures excluding food and energy,29,Monthly
+CPALTT01AUQ659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Australia",29,Quarterly
+OB000334Q,Real Gross Domestic Product,29,Quarterly
+EMVIMMIGRATION,Equity Market Volatility Tracker: Immigration,29,Monthly
+GGGDTACAA188N,General government gross debt for Canada,29,Annual
+DEUPROINDMISMEI,"Production, Sales, Work Started and Orders: Production Volume: Economic Activity: Industry (Except Construction) for Germany",29,Monthly
+DAUTOSA,Motor Vehicle Retail Sales: Domestic Autos,29,Monthly
+LRHUTTTTESM156S,Infra-Annual Labor Statistics: Monthly Unemployment Rate Total: 15 Years or over for Spain,29,Monthly
+LRHUTTTTITM156S,Infra-Annual Labor Statistics: Monthly Unemployment Rate Total: 15 Years or over for Italy,29,Monthly
+CBI,Change in Private Inventories,29,Quarterly
+B021RE1A156NBEA,Shares of gross domestic product: Imports of goods and services,29,Annual
+NICUR,National Income,29,Quarterly
+RTFPNAITA632NRUG,Total Factor Productivity at Constant National Prices for Italy,29,Annual
+CONGSP,Gross Domestic Product: All Industry Total in Colorado,29,Annual
+CHNPIEATI01GYM,Producer Prices Index: Economic Activities: Industrial Activities: Total for China,29,Monthly
+HBFRGDQ188S,Federal Debt Held by Federal Reserve Banks as Percent of Gross Domestic Product,29,Quarterly
+CPALTT01USQ659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United States",29,Quarterly
+NGMP34980,"Total Gross Domestic Product for Nashville-Davidson--Murfreesboro--Franklin, TN (MSA)",29,Annual
+ACTLISCOU15980,"Housing Inventory: Active Listing Count in Cape Coral-Fort Myers, FL (CBSA)",29,Monthly
+BRACPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Brazil",29,Monthly
+IEABCA,Balance on current account,29,Annual
+DSERRG3M086SBEA,Personal consumption expenditures: Services (chain-type price index),29,Monthly
+CCUSMA02IDM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Indonesia,28,Monthly
+NC000334Q,Gross Domestic Product,28,Quarterly
+BOPSTB,"Trade Balance: Services, Balance of Payments Basis",28,Monthly
+A01028USA558NNBR,Cotton Crop for United States,28,Annual
+CCUSMA02JPM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Japan,28,Monthly
+OECDLOLITOAASTSAM,Leading Indicators OECD: Leading indicators: CLI: Amplitude adjusted for OECD - Total,28,Monthly
+WFHCOVIDMATQUESTION,Work from Home Rate,28,Monthly
+IR3TCD01KRM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Certificates of Deposit: Total for Korea,28,Monthly
+PCNDGC96,Real Personal Consumption Expenditures: Nondurable Goods,28,Quarterly
+NGMP29820,"Total Gross Domestic Product for Las Vegas-Henderson-Paradise, NV (MSA)",28,Annual
+M1346BUSM156NNBR,"Dividend Yield of Common Stocks on the New York Stock Exchange, Composite Index for United States",28,Monthly
+IR3TTS01GBM156N,3-Month or 90-day Rates and Yields: Treasury Securities for the United Kingdom,28,Monthly
+Y033RC1Q027SBEA,Gross Private Domestic Investment: Fixed Investment: Nonresidential: Equipment,28,Quarterly
+CCUSMA02CAM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Canada,28,Monthly
+A463RD3Q052SBEA,Profit per unit of real gross value added of nonfinancial corporate business: Corporate profits with IVA and CCAdj (unit profits from current production),28,Quarterly
+ACTLISCOUIL,Housing Inventory: Active Listing Count in Illinois,28,Monthly
+MEDDAYONMAR19100,"Housing Inventory: Median Days on Market in Dallas-Fort Worth-Arlington, TX (CBSA)",28,Monthly
+OHNGSP,Gross Domestic Product: All Industry Total in Ohio,28,Annual
+CPALTT01INM657N,Consumer Price Index: All Items: Total for India,28,Monthly
+IRSTCI01AUM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for Australia,28,Monthly
+NGMP26420,"Total Gross Domestic Product for Houston-The Woodlands-Sugar Land, TX (MSA)",28,Annual
+RGMPUSMP,Total Real Gross Domestic Product for United States Metropolitan Portion,28,Annual
+RGDPNATWA666NRUG,Real GDP at Constant National Prices for Taiwan Province of China,28,Annual
+G7LOLITOAASTSAM,Leading Indicators OECD: Leading indicators: CLI: Amplitude adjusted for G7,28,Monthly
+MEDLISPRIPERSQUFEE6075,"Housing Inventory: Median Listing Price per Square Feet in San Francisco County/city, CA",28,Monthly
+IMPCA,U.S. Imports of Goods by Customs Basis from Canada,28,Monthly
+DGAMRC1A027NBEA,Personal consumption expenditures: Services: Gambling,28,Annual
+CARQGSP,Real Gross Domestic Product: All Industry Total in California,28,Quarterly
+MEXCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Mexico",28,Monthly
+ALNGSP,Gross Domestic Product: All Industry Total in Alabama,28,Annual
+EA19CPALTT01GYM,Consumer Price Index: All Items: Total: Total for the Euro Area (19 Countries),28,Monthly
+IMP0004,U.S. Imports of Goods by Customs Basis from World,28,Monthly
+NYRGSP,Real Gross Domestic Product: All Industry Total in New York,28,Annual
+ACTLISCOU12099,"Housing Inventory: Active Listing Count in Palm Beach County, FL",28,Monthly
+B056RC1A027NBEA,Net corporate dividend payments,27,Annual
+M0263AUSM500NNBR,Existing Home Mortgage Applications for United States,27,Monthly
+CANGSP,Gross Domestic Product: All Industry Total in California,27,Annual
+IRLTLT01PLM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Poland,27,Monthly
+PCECTPIMD,"FOMC Summary of Economic Projections for the Personal Consumption Expenditures Inflation Rate, Median",27,Annual
+ACTLISCOU38900,"Housing Inventory: Active Listing Count in Portland-Vancouver-Hillsboro, OR-WA (CBSA)",27,Monthly
+DPCERG3A086NBEA,Personal Consumption Expenditures: Chain-type Price Index,27,Annual
+CANEPUINDXM,Economic Policy Uncertainty Index for Canada,27,Monthly
+SEAT653PCPI,"Per Capita Personal Income in Seattle-Tacoma-Bellevue, WA (MSA)",27,Annual
+MEDLISPRI12086,"Housing Inventory: Median Listing Price in Miami-Dade County, FL",27,Monthly
+MNNGSP,Gross Domestic Product: All Industry Total in Minnesota,27,Annual
+CPALTT01BRM659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Brazil",27,Monthly
+M318191Q027NBEA,Federal government expenditures: Budget outlays,27,Quarterly
+ACTLISCOUTN,Housing Inventory: Active Listing Count in Tennessee,27,Monthly
+LRAC64TTFRQ156S,Infra-Annual Labor Statistics: Labor Force Participation Rate Total: From 15 to 64 Years for France,27,Quarterly
+IRLTLT01LUM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Luxembourg,27,Monthly
+USRECQ,NBER based Recession Indicators for the United States from the Period following the Peak through the Trough,27,Quarterly
+USOILGASNGSP,Gross Domestic Product: Oil and Gas Extraction (211) in the United States,27,Annual
+CCUSMA02IDA618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Indonesia,27,Annual
+VAPGDPSPI,Value Added by Industry: Private Services-Producing Industries as a Percentage of GDP,27,Quarterly
+M13009USM156NNBR,"Discount Rates, Federal Reserve Bank of New York for United States",27,Monthly
+NGMP41180,"Total Gross Domestic Product for St. Louis, MO-IL (MSA)",27,Annual
+FRACPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for France",27,Monthly
+NA000349Q,Personal Consumption Expenditures,27,Quarterly
+TXNQGSP,Gross Domestic Product: All Industry Total in Texas,27,Quarterly
+PCTR,Personal Current Transfer Receipts,27,Monthly
+CPALCY01JPM661N,"Consumer Price Index: Total, All Items for Japan",27,Monthly
+LRHUTTTTJPM156S,Infra-Annual Labor Statistics: Monthly Unemployment Rate Total: 15 Years or over for Japan,27,Monthly
+SPASTT01GBM661N,Financial Market: Share Prices for United Kingdom,27,Monthly
+MEDLISPRI36740,"Housing Inventory: Median Listing Price in Orlando-Kissimmee-Sanford, FL (CBSA)",27,Monthly
+IRNFAFARUSD,"Gross International Reserves Held by Central Bank for Iran, Islamic Republic of",27,Annual
+IRSTCB01RUM156N,Interest Rates: Immediate Rates (< 24 Hours): Central Bank Rates: Total for Russia,27,Monthly
+ACTLISCOU49035,"Housing Inventory: Active Listing Count in Salt Lake County, UT",27,Monthly
+MINGSP,Gross Domestic Product: All Industry Total in Michigan,27,Annual
+A084RC1Q027SBEA,Government current transfer payments,27,Quarterly
+NGMP41940,"Total Gross Domestic Product for San Jose-Sunnyvale-Santa Clara, CA (MSA)",27,Annual
+DFXARX1M020SBEA,Real personal consumption expenditures: Food,27,Monthly
+DPETRC1A027NBEA,"Personal consumption expenditures: Pets, pet products, and related services",27,Annual
+CCEUSP01GBM651N,"Currency Conversions: EURO Exchange Rate: Spot, End of Period: EUR: National Currency for United Kingdom",27,Monthly
+CBIC1,Change in Real Private Inventories,27,Quarterly
+MABMM301AUM189S,Monetary Aggregates and Their Components: Broad Money and Components: M3 for Australia,27,Monthly
+NEWLISCOUUS,Housing Inventory: New Listing Count in the United States,27,Monthly
+LRACTTTTMXQ156S,Infra-Annual Labor Statistics: Labor Force Participation Rate Total: 15 Years or over for Mexico,27,Quarterly
+ACTLISCOU12115,"Housing Inventory: Active Listing Count in Sarasota County, FL",27,Monthly
+M04128USM350NNBR,"Consumer Price Index, All Items for United States",26,Monthly
+DGDSRG3M086SBEA,Personal consumption expenditures: Goods (chain-type price index),26,Monthly
+ACTLISCOUMN,Housing Inventory: Active Listing Count in Minnesota,26,Monthly
+IRLTLT01NZM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for New Zealand,26,Monthly
+DPCERAM1M225NBEA,Real Personal Consumption Expenditures,26,Monthly
+IRSTPI01CAM156N,Interest Rates: Immediate Rates (< 24 Hours): Prime Rates: Total for Canada,26,Monthly
+IR3TIB01FRM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for France,26,Monthly
+USACPALTT01IXNBM,Consumer Price Index: All Items: Total for United States,26,Monthly
+GGNLBAJPA188N,General government net lending/borrowing for Japan,26,Annual
+IRQNGDPMOMBD,Crude Oil Production for Iraq,26,Annual
+AZNGSP,Gross Domestic Product: All Industry Total in Arizona,26,Annual
+A191RI1A225NBEA,Gross Domestic Product: Implicit Price Deflator,26,Annual
+SAUNGDPXORPCHPT,Non-Oil Real GDP Growth in Constant Prices for Saudi Arabia,26,Annual
+MEDLISPRI45300,"Housing Inventory: Median Listing Price in Tampa-ST. Petersburg-Clearwater, FL (CBSA)",26,Monthly
+UKEPUINDXM,Economic Policy Uncertainty Index for United Kingdom,26,Monthly
+A229RX0Q048SBEA,Real Disposable Personal Income: Per Capita,26,Quarterly
+IRLTLT01IEM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Ireland,26,Monthly
+A464RC1Q027SBEA,Nonfinancial corporate business: Profits before tax (without IVA and CCAdj),26,Quarterly
+ACTLISCOUGA,Housing Inventory: Active Listing Count in Georgia,26,Monthly
+AREPZPIOILBEGUSD,Breakeven Fiscal Oil Price for United Arab Emirates,26,Annual
+IRLTLT01NOM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Norway,26,Monthly
+A824RE1Q156NBEA,Shares of gross domestic product: Government consumption expenditures and gross investment: Federal: National defense,26,Quarterly
+M13050USM156NNBR,"Yields on Municipal Bonds, Twenty Bond Average for United States",26,Monthly
+FEDTARRH,"FOMC Summary of Economic Projections for the Fed Funds Rate, Range, High",26,Annual
+NAEXKP01INQ652S,National Accounts: GDP by Expenditure: Constant Prices: Gross Domestic Product: Total for India,26,Quarterly
+USAGDPDEFAISMEI,National Accounts: National Accounts Deflators: Gross Domestic Product: GDP Deflator for United States,26,Annual
+IRSTCI01USM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for United States,26,Monthly
+LCEAMN01JPM661S,Hourly Earnings: Earnings: Economic Activity: Manufacturing: Total Economy for Japan,26,Monthly
+USALORSGPNOSTSAM,Composite Leading Indicators: Reference Series (GDP) Normalized for United States,26,Monthly
+QATPZPIOILBEGUSD,Breakeven Fiscal Oil Price for Qatar,26,Annual
+A229RC0Q052SBEA,Disposable personal income: Per capita,26,Quarterly
+TXPCPI,Per Capita Personal Income in Texas,26,Annual
+ACTLISCOUNC,Housing Inventory: Active Listing Count in North Carolina,26,Monthly
+MEDDAYONMAR38060,"Housing Inventory: Median Days on Market in Phoenix-Mesa-Scottsdale, AZ (CBSA)",26,Monthly
+IRSTCI01EZM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for Euro Area (19 Countries),26,Monthly
+A09021USA174NNBR,"Deficits, Trading Companies for United States",26,Annual
+CPALTT01FRM657N,Consumer Price Index: All Items: Total for France,26,Monthly
+IRLTLT01PTM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Portugal,26,Monthly
+IRLTLT01FIM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Finland,25,Monthly
+HCIYISUSA066NRUG,Index of Human Capital per Person for United States,25,Annual
+USAGFCFQDSMEI,National Accounts: GDP by Expenditure: Current Prices: Gross Fixed Capital Formation for United States,25,Quarterly
+IRLTLT01USA156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for United States,25,Annual
+USAGDPDEFQISMEI,National Accounts: National Accounts Deflators: Gross Domestic Product: GDP Deflator for United States,25,Quarterly
+IRSTCI01BRM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for Brazil,25,Monthly
+ILNGSP,Gross Domestic Product: All Industry Total in Illinois,25,Annual
+CPALTT01USM661S,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United States",25,Monthly
+LRUN64TTGRQ156S,Infra-Annual Labor Statistics: Unemployment Rate Total: From 15 to 64 Years for Greece,25,Quarterly
+DDURRG3M086SBEA,Personal consumption expenditures: Durable goods (chain-type price index),25,Monthly
+RGDPNAUSA666NRUG,Real GDP at Constant National Prices for United States,25,Annual
+A02F2AUSA374NNBR,Miles of Railroad Built for United States,25,Annual
+USCONSTRQGSP,Real Gross Domestic Product: Construction (23) in the United States,25,Quarterly
+JCXFEMD,"FOMC Summary of Economic Projections for the Personal Consumption Expenditures less Food and Energy Inflation Rate, Median",25,Annual
+A679RX1Q020SBEA,Real gross private domestic investment: Fixed investment: Nonresidential: Information processing equipment and software,25,Quarterly
+B020RE1Q156NBEA,Shares of gross domestic product: Exports of goods and services,25,Quarterly
+MABMM301CAM189S,Monetary Aggregates and Their Components: Broad Money and Components: M3 for Canada,25,Monthly
+LRUNTTTTCAQ156S,Infra-Annual Labor Statistics: Unemployment Rate Total: 15 Years or over for Canada,25,Quarterly
+RUSCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Russia",25,Monthly
+DPHCRC1A027NBEA,Personal consumption expenditures: Household consumption expenditures,25,Annual
+COE,"National Income: Compensation of Employees, Paid",25,Quarterly
+DEEPUINDXM,Economic Policy Uncertainty Index for Germany,25,Monthly
+USLEGALNGSP,Gross Domestic Product: Legal Services (5411) in the United States,25,Annual
+PCPI36061,"Per Capita Personal Income in New York County, NY",25,Annual
+USRECP,NBER based Recession Indicators for the United States from the Peak through the Period preceding the Trough,25,Monthly
+Q10096USQ144NNBR,"New Manufacturing Capital Expenditures for Plant and Equipment, Current Prices for United States",25,Quarterly
+GANGSP,Gross Domestic Product: All Industry Total in Georgia,25,Annual
+IRNPCPIPCHPT,"Consumer Price Inflation for Iran, Islamic Republic of",25,Annual
+ACTLISCOU27260,"Housing Inventory: Active Listing Count in Jacksonville, FL (CBSA)",25,Monthly
+CORESTICKM679SFRBATL,Sticky Price Consumer Price Index less Food and Energy,25,Monthly
+MEDLISPRIUT,Housing Inventory: Median Listing Price in Utah,25,Monthly
+PANGSP,Gross Domestic Product: All Industry Total in Pennsylvania,25,Annual
+USEPUNEWSINDXM,Economic Policy Uncertainty Index: News-Based Index for the United States,25,Monthly
+PHMEPRPIHCSA,Pharmaceutical and Other Medical Products Expenditures Price Index,25,Annual
+LMJVTTUVUSM647S,Infra-Annual Registered Unemployment and Job Vacancies: Total Economy: Unfilled Vacancies for United States,25,Monthly
+RTFPNAINA632NRUG,Total Factor Productivity at Constant National Prices for India,25,Annual
+CFSBCACTIVITYMFG,Chicago Fed Survey of Economic Conditions: Manufacturing Activity Index in Federal Reserve District 7: Chicago,25,Monthly
+RGDPNACAA666NRUG,Real GDP at Constant National Prices for Canada,25,Annual
+RGDPNAINA666NRUG,Real GDP at Constant National Prices for India,25,Annual
+HTRUCKSNSA,Motor Vehicle Retail Sales: Heavy Weight Trucks,24,Monthly
+IEAA,Net U.S. acquisition of financial assets excluding financial derivatives (net increase in assets / financial outflow (+)),24,Quarterly
+LRUNTTTTMXQ156S,Infra-Annual Labor Statistics: Unemployment Rate Total: 15 Years or over for Mexico,24,Quarterly
+MABMM301JPM189S,Monetary Aggregates and Their Components: Broad Money and Components: M3 for Japan,24,Monthly
+IRLTLT01CLM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Chile,24,Monthly
+NGMP38300,"Total Gross Domestic Product for Pittsburgh, PA (MSA)",24,Annual
+M16005USM358SNBR,"Composite Index of Three Lagging Indicators, Amplitude-Adjusted, Weighted for United States",24,Monthly
+GDPALL06037,"Gross Domestic Product: All Industries in Los Angeles County, CA",24,Annual
+ITACPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Italy",24,Monthly
+Y006RC1Q027SBEA,Gross Private Domestic Investment: Fixed Investment: Nonresidential: Intellectual Property Products: Research and Development,24,Quarterly
+A033RC1A027NBEA,National income: Compensation of employees,24,Annual
+IR3TIB01USQ156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for United States,24,Quarterly
+VISASMINSA,Visa Spending Momentum Index: Non-discretionary: United States,24,Monthly
+CHNCPIALLQINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for China",24,Quarterly
+B985RC1Q027SBEA,Private fixed investment: Nonresidential: Intellectual property products: Software,24,Quarterly
+ACTLISCOU32003,"Housing Inventory: Active Listing Count in Clark County, NV",24,Monthly
+MEDLISPRI6073,"Housing Inventory: Median Listing Price in San Diego County, CA",24,Monthly
+RGDPNADEA666NRUG,Real GDP at Constant National Prices for Germany,24,Annual
+XTEXVA01CNM664S,International Merchandise Trade Statistics: Exports: Commodities for China,24,Monthly
+CANRECDM,OECD based Recession Indicators for Canada from the Peak through the Trough (DISCONTINUED),24,"Daily, 7-Day"
+IRSTCB01CNM156N,Interest Rates: Immediate Rates (< 24 Hours): Central Bank Rates: Total for China,24,Monthly
+BOPBCA,Balance on Current Account (DISCONTINUED),24,Quarterly
+A011RE1Q156NBEA,Shares of gross domestic product: Gross private domestic investment: Fixed investment: Residential,24,Quarterly
+IMPGSA,Imports of Goods and Services,24,Annual
+USACPALTT01IXNBQ,Consumer Price Index: All Items: Total for United States,24,Quarterly
+IIPPORTAQ,U.S. Assets: Portfolio Investment,24,"Quarterly, End of Period"
+CNCF,Corporate Net Cash Flow with IVA,24,Quarterly
+RTFPNAKRA632NRUG,Total Factor Productivity at Constant National Prices for Republic of Korea,24,Annual
+CPALTT01CAM659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Canada",24,Monthly
+M1TTOTL1ES000,Current-Cost Depreciation of Fixed Assets,24,Annual
+UMCSENT1,University of Michigan: Consumer Sentiment (DISCONTINUED),24,Not Applicable
+A822RY2Q224SBEA,Contributions to percent change in real gross domestic product: Government consumption expenditures and gross investment,24,Quarterly
+NGMP47900,"Total Gross Domestic Product for Washington-Arlington-Alexandria, DC-VA-MD-WV (MSA)",24,Annual
+EUROREC,OECD based Recession Indicators for Euro Area from the Period following the Peak through the Trough (DISCONTINUED),24,Monthly
+GGNLBADEA188N,General government net lending/borrowing for Germany,24,Annual
+ACTLISCOURI,Housing Inventory: Active Listing Count in Rhode Island,24,Monthly
+GGGDTAINA188N,General government gross debt for India,24,Annual
+ACTLISCOUNH,Housing Inventory: Active Listing Count in New Hampshire,24,Monthly
+A680RC1Q027SBEA,Private fixed investment: Nonresidential: Equipment: Industrial equipment,24,Quarterly
+FLRGSP,Real Gross Domestic Product: All Industry Total in Florida,24,Annual
+GNPC96,Real Gross National Product,24,Quarterly
+QATNGDPMG,Gas Production for Qatar,24,Annual
+FLPCPI,Per Capita Personal Income in Florida,24,Annual
+NGMP16740,"Total Gross Domestic Product for Charlotte-Concord-Gastonia, NC-SC (MSA)",24,Annual
+EPUFISCAL,Economic Policy Uncertainty Index: Categorical Index: Fiscal Policy (Taxes OR Spending),24,Monthly
+CHNPRINTO01IXPYM,Production: Industry: Total Industry Excluding Construction for China,24,Monthly
+CPALTT01USA661S,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United States",24,Annual
+A829RD3Q086SBEA,Government consumption expenditures and gross investment: State and local (implicit price deflator),23,Quarterly
+PENLISCOUUS,Housing Inventory: Pending Listing Count in the United States,23,Monthly
+A455RC1Q027SBEA,Gross value added of nonfinancial corporate business,23,Quarterly
+DTENRG3A086NBEA,Personal consumption expenditures: Services: Housing: Rental of tenant-occupied nonfarm housing (chain-type price index),23,Annual
+LRHUTTTTSEM156S,Infra-Annual Labor Statistics: Monthly Unemployment Rate Total: 15 Years or over for Sweden,23,Monthly
+RGMP16980,"Total Real Gross Domestic Product for Chicago-Naperville-Elgin, IL-IN-WI (MSA)",23,Annual
+IRSTCI01INM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for India,23,Monthly
+CPALTT01INM659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for India",23,Monthly
+EA19LORSGPORGYSAM,Leading Indicators OECD: Reference Series: Gross Domestic Product (GDP): Original Series for the Euro Area (19 Countries),23,Monthly
+IRLTLT01DEA156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Germany,23,Annual
+A446RC1Q027SBEA,Corporate business: Profits before tax (without IVA and CCAdj),23,Quarterly
+A2000C1A027NBEA,Farm output,23,Annual
+MEDLISPRI34980,"Housing Inventory: Median Listing Price in Nashville-Davidson--Murfreesboro--Franklin, TN (CBSA)",23,Monthly
+GGGDTAMXA188N,General government gross debt for Mexico,23,Annual
+CHNBCABP6USD,"Balance of Payments: Total Net Current Account for China, P.R.: Mainland",23,Annual
+RPPALLUSNMP,Regional Price Parities: All Items: Nonmetropolitan Portion for United States,23,Annual
+ACTLISCOU18140,"Housing Inventory: Active Listing Count in Columbus, OH (CBSA)",23,Monthly
+SPASTT01DEM661N,Financial Market: Share Prices for Germany,23,Monthly
+A023RC1Q027SBEA,Gross national income,23,Quarterly
+W070RC1Q027SBEA,State and local government current tax receipts,23,Quarterly
+DAUPNSA,Domestic Auto Production,23,Monthly
+A4102C1Q027SBEA,"Gross domestic income: Compensation of employees, paid: Wages and salaries",23,Quarterly
+M318501A027NBEA,Federal government budget surplus or deficit (-),23,Annual
+MEDLISPRIPERSQUFEE12420,"Housing Inventory: Median Listing Price per Square Feet in Austin-Round Rock, TX (CBSA)",23,Monthly
+NGMP32820,"Total Gross Domestic Product for Memphis, TN-MS-AR (MSA)",23,Annual
+W369RG3Q066SBEA,Gross domestic product: Terms of trade index,23,Quarterly
+GGGDTAPLA188N,General government gross debt for Poland,23,Annual
+MANGSP,Gross Domestic Product: All Industry Total in Massachusetts,23,Annual
+ACTLISCOU33460,"Housing Inventory: Active Listing Count in Minneapolis-ST. Paul-Bloomington, MN-WI (CBSA)",23,Monthly
+PCPI06037,"Per Capita Personal Income in Los Angeles County, CA",23,Annual
+CCUSSP01IFM650N,"Currency Conversions: US Dollar Exchange Rate: Spot, End of Period: USD: National Currency for SDR",23,Monthly
+LRUNTTTTAUM156S,Infra-Annual Labor Statistics: Unemployment Rate Total: 15 Years or over for Australia,23,Monthly
+M08354USM310NNBR,"Average Hours of Work Per Week, Total, Household Survey for United States",23,Monthly
+NGMP26900,"Total Gross Domestic Product for Indianapolis-Carmel-Anderson, IN (MSA)",23,Annual
+A013BAGBA576NNBR,Steel Production for Great Britain,23,Annual
+DPCERA3M086SBEA,Real personal consumption expenditures (chain-type quantity index),23,Monthly
+W018RC1Q027SBEA,Federal government total receipts,23,Quarterly
+LRAC64TTJPM156S,Infra-Annual Labor Statistics: Labor Force Participation Rate Total: From 15 to 64 Years for Japan,23,Monthly
+SPASTT01CNM661N,Financial Market: Share Prices for China,23,Monthly
+ARGCPALTT01IXNBM,Consumer Price Index: All Items: Total for Argentina,23,Monthly
+TXRGSP,Real Gross Domestic Product: All Industry Total in Texas,23,Annual
+RTFPNADEA632NRUG,Total Factor Productivity at Constant National Prices for Germany,23,Annual
+NFCPATAX,Nonfinancial Corporate Business: Profits After Tax (without IVA and CCAdj),23,Quarterly
+SPASTT01INM661N,Financial Market: Share Prices for India,23,Monthly
+QATGGRXOGDPXOPT,Non-oil Revenue for General Government for Qatar,23,Annual
+CBSICO,CSBS Community Bank Sentiment Index,23,Quarterly
+BOPI,"Foreign Assets in the U.S.: Net, Capital Inflow {+} (DISCONTINUED)",23,Quarterly
+Q13051USQ156NNBR,"Earnings Yield of Common Stocks on the New York Stock Exchange, Composite for United States",23,Quarterly
+VAPGDPR,Value Added by Industry: Retail Trade as a Percentage of GDP,23,Quarterly
+ACTLISCOUMI,Housing Inventory: Active Listing Count in Michigan,22,Monthly
+CCUSMA02GBM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for United Kingdom,22,Monthly
+CMRMT,Real Manufacturing and Trade Industries Sales,22,Monthly
+CPGRLE01JPM657N,Consumer Price Index: OECD Groups: All Items Non-Food Non-Energy: Total for Japan,22,Monthly
+IRSTCI01CHM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for Switzerland,22,Monthly
+CPALTT01ZAM659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for South Africa",22,Monthly
+NJNGSP,Gross Domestic Product: All Industry Total in New Jersey,22,Annual
+XTNTVA01CNM667S,International Merchandise Trade Statistics: Trade Balance: Commodities for China,22,Monthly
+Y694RX1Q020SBEA,Real Gross Domestic Product: Research and Development,22,Quarterly
+ZAFCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for South Africa",22,Monthly
+SPASTT01KRM661N,Financial Market: Share Prices for Korea,22,Monthly
+ACTLISCOU28140,"Housing Inventory: Active Listing Count in Kansas City, MO-KS (CBSA)",22,Monthly
+ESPCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Spain",22,Monthly
+A001RG3A086NBEA,Gross national product (chain-type price index),22,Annual
+HLTHSCEXPHCSA,Health Expenditures,22,Annual
+S210401A027NBEA,Personal current taxes: State and local: Property taxes,22,Annual
+ACTLISCOU44060,"Housing Inventory: Active Listing Count in Spokane-Spokane Valley, WA (CBSA)",22,Monthly
+RKNANPCNA666NRUG,Capital Stock at Constant National Prices for China,22,Annual
+SPASTT01CAM661N,Financial Market: Share Prices for Canada,22,Monthly
+IIPUSNETIA,U.S. Net International Investment Position,22,"Annual, End of Period"
+EXPGSA,Exports of Goods and Services,22,Annual
+LAPCPI,Per Capita Personal Income in Louisiana,22,Annual
+MEDDAYONMARCA,Housing Inventory: Median Days on Market in California,22,Monthly
+NGMP19740,"Total Gross Domestic Product for Denver-Aurora-Lakewood, CO (MSA)",22,Annual
+A019RY2Q224SBEA,Contributions to percent change in real gross domestic product: Net exports of goods and services,22,Quarterly
+RGDPNASGA666NRUG,Real GDP at Constant National Prices for Singapore,22,Annual
+IRLTLT01AUA156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Australia,22,Annual
+IRLTLT01CAQ156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Canada,22,Quarterly
+NGMP28140,"Total Gross Domestic Product for Kansas City, MO-KS (MSA)",22,Annual
+ACTLISCOUOH,Housing Inventory: Active Listing Count in Ohio,22,Monthly
+VAI,Value Added by Industry: Information,22,Quarterly
+WVNGSP,Gross Domestic Product: All Industry Total in West Virginia,22,Annual
+M1105AUSM505NNBR,American Railroad Stock Prices for United States,22,Monthly
+A829RD3A086NBEA,Government consumption expenditures and gross investment: State and local (implicit price deflator),22,Annual
+IRSTCB01BRM156N,Interest Rates: Immediate Rates (< 24 Hours): Central Bank Rates: Total for Brazil,22,Monthly
+W457RC1A027NBEA,"Gap, IRS less BEA gross output of nonprofit institutions and current transfer payments",22,Annual
+IRLTLT01BEM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Belgium,22,Monthly
+IRLTLT01AUQ156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Australia,22,Quarterly
+CPALTT01JPM659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Japan",22,Monthly
+EMVMACROINTEREST,Equity Market Volatility Tracker: Macroeconomic News and Outlook: Interest Rates,22,Monthly
+CSCICP02EZM460S,Consumer Opinion Surveys: Composite Consumer Confidence for Euro Area (19 Countries),22,Monthly
+PDI,Personal Income Receipts on Assets: Personal Dividend Income,22,Monthly
+A006RL1Q225SBEA,Real Gross Private Domestic Investment,22,Quarterly
+MWACL06037,"Estimated Mean Real Household Wages Adjusted by Cost of Living for Los Angeles County, CA",22,Annual
+VAPGDPRL,"Value Added by Industry: Finance, Insurance, Real Estate, Rental, and Leasing: Real Estate and Rental and Leasing as a Percentage of GDP",22,Quarterly
+GGNLBAUSA188N,General government net lending/borrowing for United States,22,Annual
+GGGDTAFRA188N,General government gross debt for France,22,Annual
+IRLTLT01DEQ156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Germany,22,Quarterly
+TNNGSP,Gross Domestic Product: All Industry Total in Tennessee,21,Annual
+M1476BUSM027NNBR,Monetary Gold Stock for United States,21,Monthly
+RTFPNANOA632NRUG,Total Factor Productivity at Constant National Prices for Norway,21,Annual
+NGAGGXG01GDPPT,Total Expenditure of General Government for Nigeria,21,Annual
+FLRQGSP,Real Gross Domestic Product: All Industry Total in Florida,21,Quarterly
+W171RC1Q027SBEA,Net domestic investment,21,Quarterly
+JPNCPIALLQINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Japan",21,Quarterly
+LRUN74TTFRQ156S,Infra-Annual Labor Statistics: Unemployment Rate Total: From 15 to 74 Years for France,21,Quarterly
+IR3TIB01IDM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Indonesia,21,Monthly
+COFC,Consumption of Fixed Capital,21,Quarterly
+LRUN64TTCHQ156S,Infra-Annual Labor Statistics: Unemployment Rate Total: From 15 to 64 Years for Switzerland,21,Quarterly
+MSPCPI,Per Capita Personal Income in Mississippi,21,Annual
+DHUTRC1Q027SBEA,Personal consumption expenditures: Services: Housing and utilities,21,Quarterly
+ETHEREERIX,Real Effective Exchange Rate as Based on Consumer Price Index for Ethiopia,21,Annual
+MEDLISPRITX,Housing Inventory: Median Listing Price in Texas,21,Monthly
+EXPCA,U.S. Exports of Goods by F.A.S. Basis to Canada,21,Monthly
+POLCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Poland",21,Monthly
+OKNGSP,Gross Domestic Product: All Industry Total in Oklahoma,21,Annual
+RGDPNAIDA666NRUG,Real GDP at Constant National Prices for Indonesia,21,Annual
+M1125AUSM343NNBR,"Index of All Common Stock Prices, Cowles Commission and Standard and Poor's Corporation for United States",21,Monthly
+COMREPAUQ159N,Commercial Real Estate Prices for Australia,21,Quarterly
+A946RC1A027NBEA,Private fixed investment in structures: Residential: Improvements,21,Annual
+ACTLISCOUMD,Housing Inventory: Active Listing Count in Maryland,21,Monthly
+CCUSMA02INM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for India,21,Monthly
+WASCUR,Compensation of Employees: Wages and Salary Accruals,21,Quarterly
+DMINRC1A027NBEA,Personal consumption expenditures: Net health insurance: Medical care and hospitalization,21,Annual
+NYNQGSP,Gross Domestic Product: All Industry Total in New York,21,Quarterly
+IRLTLT01FRA156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for France,21,Annual
+NB000334Q,Real Gross Domestic Product,21,Quarterly
+TOTLISCOU53033,"Housing Inventory: Total Listing Count in King County, WA",21,Monthly
+MEDDAYONMAR12086,"Housing Inventory: Median Days on Market in Miami-Dade County, FL",21,Monthly
+B009RX1Q020SBEA,Real gross private domestic investment: Fixed investment: Nonresidential: Structures,21,Quarterly
+DFSARX1Q020SBEA,Real personal consumption expenditures: Services: Food services and accommodations,21,Quarterly
+GDPALL06075,"Gross Domestic Product: All Industries in San Francisco County, CA",21,Annual
+JPNPROINDMISMEI,"Production, Sales, Work Started and Orders: Production Volume: Economic Activity: Industry (Except Construction) for Japan",21,Monthly
+M10092USM144NNBR,Total Consumer Credit Outstanding for United States,21,"Monthly, End of Month"
+MEDLISPRINY,Housing Inventory: Median Listing Price in New York,21,Monthly
+RIFSPFFNBWAW,Federal Funds Effective Rate,21,"Biweekly, Ending Wednesday"
+INFECTDISEMVTRACKD,Equity Market Volatility: Infectious Disease Tracker,21,"Daily, 7-Day"
+MANMM101EZM189S,Monetary Aggregates and Their Components: Narrow Money and Components: M1 and Components: M1 for Euro Area (19 Countries),21,Monthly
+AUENSA,Auto Exports,21,Monthly
+LANGSP,Gross Domestic Product: All Industry Total in Louisiana,21,Annual
+GBRCPIALLQINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United Kingdom",21,Quarterly
+GARQGSP,Real Gross Domestic Product: All Industry Total in Georgia,21,Quarterly
+IRLTLT01ILM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Israel,21,Monthly
+DPCERO1Q156NBEA,Real Personal Consumption Expenditures,21,Quarterly
+A067RO1Q156NBEA,Real Disposable Personal Income,21,Quarterly
+NGMP38060,"Total Gross Domestic Product for Phoenix-Mesa-Scottsdale, AZ (MSA)",21,Annual
+PCETRIM6M680SFRBDAL,Trimmed Mean PCE Inflation Rate,21,Monthly
+CCUSMA02PLM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Poland,21,Monthly
+ACTLISCOU46060,"Housing Inventory: Active Listing Count in Tucson, AZ (CBSA)",21,Monthly
+DCNGSP,Gross Domestic Product: All Industry Total in the District of Columbia,21,Annual
+A071RC1A027NBEA,Personal saving,21,Annual
+A796RX0Q048SBEA,Real personal consumption expenditures per capita: Goods: Nondurable goods,21,Quarterly
+UNRATECTM,"FOMC Summary of Economic Projections for the Civilian Unemployment Rate, Central Tendency, Midpoint",21,Annual
+INNGSP,Gross Domestic Product: All Industry Total in Indiana,21,Annual
+USACP040100GPM,"Consumer Price Index: Housing, Water, Electricity, Gas and Other Fuels (COICOP 04): Actual Rentals for Housing: Total for United States",21,Monthly
+CPALTT01IDM657N,Consumer Price Index: All Items: Total for Indonesia,21,Monthly
+ACTLISCOU6065,"Housing Inventory: Active Listing Count in Riverside County, CA",21,Monthly
+NAEXKP01JPQ657S,National Accounts: GDP by Expenditure: Constant Prices: Gross Domestic Product: Total for Japan,21,Quarterly
+IRLTLT01HUM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Hungary,21,Monthly
+RGDPNAMYA666NRUG,Real GDP at Constant National Prices for Malaysia,21,Annual
+RAGGCTGGC,Resources and Assets: Gold and Gold Certificates: Total Gold; Gold Certificate Reserve,21,"Weekly, Ending Wednesday"
+ACTLISCOU33100,"Housing Inventory: Active Listing Count in Miami-Fort Lauderdale-West Palm Beach, FL (CBSA)",21,Monthly
+USMANNQGSP,Gross Domestic Product: Manufacturing (31-33) in the United States,21,Quarterly
+IRSTCB01IDM156N,Interest Rates: Immediate Rates (< 24 Hours): Central Bank Rates: Total for Indonesia,21,Monthly
+KORCPIALLQINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Korea",21,Quarterly
+MPU4910013,Private Nonfarm Business Sector: Total Factor Productivity,21,Annual
+ACTLISCOU41700,"Housing Inventory: Active Listing Count in San Antonio-New Braunfels, TX (CBSA)",21,Monthly
+LRUNTTTTKRM156S,Infra-Annual Labor Statistics: Unemployment Rate Total: 15 Years or over for Korea,21,Monthly
+AKPCPI,Per Capita Personal Income in Alaska,21,Annual
+CCUSMA02EZQ618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Euro Area (19 Countries),21,Quarterly
+GDPC1MDLR,"Longer Run FOMC Summary of Economic Projections for the Growth Rate of Real Gross Domestic Product, Median",21,Not Applicable
+NGMP33460,"Total Gross Domestic Product for Minneapolis-St. Paul-Bloomington, MN-WI (MSA)",21,Annual
+RGDPNABRA666NRUG,Real GDP at Constant National Prices for Brazil,21,Annual
+DLIGRC1A027NBEA,"Personal consumption expenditures: Admissions to specified spectator amusements: Live entertainment, excluding sports",21,Annual
+IRLTLT01CAA156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Canada,21,Annual
+ACTLISCOU28940,"Housing Inventory: Active Listing Count in Knoxville, TN (CBSA)",21,Monthly
+B009RC1Q027SBEA,Private fixed investment: Nonresidential: Structures,20,Quarterly
+AUST448PCPI,"Per Capita Personal Income in Austin-Round Rock, TX (MSA)",20,Annual
+DALL148PCPI,"Per Capita Personal Income in Dallas-Fort Worth-Arlington, TX (MSA)",20,Annual
+A445RE1A156NBEA,"Shares of gross domestic income: Corporate profits with inventory valuation and capital consumption adjustments, domestic industries",20,Annual
+USREALNGSP,Gross Domestic Product: Real Estate (531) in the United States,20,Annual
+SAUNXGOCMBD,Crude Oil Exports for Saudi Arabia,20,Annual
+KORCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Korea",20,Monthly
+BBKMCOIX,Brave-Butters-Kelley Coincident Index,20,Monthly
+W388RC1A027NBEA,Disposable household income,20,Annual
+VTNGSP,Gross Domestic Product: All Industry Total in Vermont,20,Annual
+GBRCPIALLAINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for United Kingdom",20,Annual
+ILNQGSP,Gross Domestic Product: All Industry Total in Illinois,20,Quarterly
+IRSTCI01GBM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for United Kingdom,20,Monthly
+TGDEF,Net Government Saving,20,Quarterly
+ACTLISCOUMM42660,"Housing Inventory: Active Listing Count Month-Over-Month in Seattle-Tacoma-Bellevue, WA (CBSA)",20,Monthly
+LRAC64TTZAQ156S,Infra-Annual Labor Statistics: Labor Force Participation Rate Total: From 15 to 64 Years for South Africa,20,Quarterly
+IEABCPI,Balance on primary income,20,Quarterly
+ACTLISCOU36059,"Housing Inventory: Active Listing Count in Nassau County, NY",20,Monthly
+CPALTT01ITM657N,Consumer Price Index: All Items: Total for Italy,20,Monthly
+SPASTT01JPM661N,Financial Market: Share Prices for Japan,20,Monthly
+CCUSMA02MXM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Mexico,20,Monthly
+ISRCPIALLMINMEI,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Israel",20,Monthly
+MANMM101USM189S,Monetary Aggregates and Their Components: Narrow Money and Components: M1 and Components: M1 for United States,20,Monthly
+RGDPNAVNA666NRUG,Real GDP at Constant National Prices for Viet Nam,20,Annual
+AZEPZPIOILBEGUSD,Breakeven Fiscal Oil Price for Azerbaijan,20,Annual
+DRCARC1Q027SBEA,Personal consumption expenditures: Recreation services,20,Quarterly
+CCUSMA02KRM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Korea,20,Monthly
+W255RC1Q027SBEA,Net interest and miscellaneous payments on assets,20,Quarterly
+JCXFECTM,"FOMC Summary of Economic Projections for the Personal Consumption Expenditures less Food and Energy Inflation Rate, Central Tendency, Midpoint",20,Annual
+CPALTT01MXM657N,Consumer Price Index: All Items: Total for Mexico,20,Monthly
+A463RC1Q027SBEA,Corporate profits with inventory valuation and capital consumption adjustments: Domestic industries: Nonfinancial,20,Quarterly
+RGDPNATHA666NRUG,Real GDP at Constant National Prices for Thailand,20,Annual
+A068RC1,Personal outlays,20,Monthly
+USGOVFEDMILRGSP,Real Gross Domestic Product: Military in the United States,20,Annual
+DPCERE1A156NBEA,Shares of gross domestic product: Personal consumption expenditures,20,Annual
+DPCCRAM1M225NBEA,Real Personal Consumption Expenditures: PCE excluding food and energy,20,Monthly
+A067RX1A020NBEA,Real disposable personal income,20,Annual
+CPALTT01CAQ659N,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Canada",20,Quarterly
+IR3TIB01DKM156N,Interest Rates: 3-Month or 90-Day Rates and Yields: Interbank Rates: Total for Denmark,20,Monthly
+RTFPNAIDA632NRUG,Total Factor Productivity at Constant National Prices for Indonesia,20,Annual
+NAEXKP01GBQ657S,National Accounts: GDP by Expenditure: Constant Prices: Gross Domestic Product: Total for United Kingdom,20,Quarterly
+NA000308Q,Federal government current expenditures: Interest payments,20,Quarterly
+INDEPUINDXM,Economic Policy Uncertainty Index for India,20,Monthly
+ACTLISCOU36540,"Housing Inventory: Active Listing Count in Omaha-Council Bluffs, NE-IA (CBSA)",20,Monthly
+A067RC1A027NBEA,Disposable personal income,20,Annual
+ETHNGDPRPCPPPT,Real Gross Domestic Product for Ethiopia,20,Annual
+GGGDTABRA188N,General government gross debt for Brazil,20,Annual
+SLCE,State and Local Consumption Expenditures & Gross Investment,20,Quarterly
+NJPCPI,Per Capita Personal Income in New Jersey,20,Annual
+MNRQGSP,Real Gross Domestic Product: All Industry Total in Minnesota,20,Quarterly
+A261RO1Q156NBEA,Real Gross Domestic Income,20,Quarterly
+RGDPNABDA666NRUG,Real GDP at Constant National Prices for Bangladesh,20,Annual
+KWTPZPIOILBEGUSD,Breakeven Fiscal Oil Price for Kuwait,20,Annual
+MEDLISPRIPERSQUFEE12086,"Housing Inventory: Median Listing Price per Square Feet in Miami-Dade County, FL",20,Monthly
+ACTLISCOU16860,"Housing Inventory: Active Listing Count in Chattanooga, TN-GA (CBSA)",20,Monthly
+MSNGSP,Gross Domestic Product: All Industry Total in Mississippi,20,Annual
+AKNGSP,Gross Domestic Product: All Industry Total in Alaska,20,Annual
+BBKMCY,Brave-Butters-Kelley Cycle Component of GDP,20,Monthly
+GGGDTAAUA188N,General government gross debt for Australia,20,Annual
+UZBPCPIPCHPT,Consumer Price Inflation for Uzbekistan,20,Annual
+BUSFIXINVESTNOW,Nowcast for Real Gross Private Domestic Investment: Fixed Investment: Business,20,Quarterly
+A255RX1Q020SBEA,Real imports of goods,20,Quarterly
+CPALTT01CHM657N,Consumer Price Index: All Items: Total for Switzerland,20,Monthly
+STICKCPIM159SFRBATL,Sticky Price Consumer Price Index,20,Monthly
+CPALTT01BRM657N,Consumer Price Index: All Items: Total for Brazil,20,Monthly
+CPALTT01JPM661S,"Consumer Price Indices (CPIs, HICPs), COICOP 1999: Consumer Price Index: Total for Japan",20,Monthly
+RTFPNASGA632NRUG,Total Factor Productivity at Constant National Prices for Singapore,20,Annual
+PAKDGDPGDPPT,Total External Debt for Pakistan,20,Annual
+XTNTVA01JPQ664S,International Merchandise Trade Statistics: Trade Balance: Commodities for Japan,20,Quarterly
+LCEAMN01MXM661S,Hourly Earnings: Earnings: Economic Activity: Manufacturing: Total Economy for Mexico,19,Monthly
+LFWA64TTKRM647N,Infra-Annual Labor Statistics: Working-Age Population Total: From 15 to 64 Years for Korea,19,Monthly
+BOPSEXP,"Exports of Services, Balance of Payments Basis",19,Monthly
+DNRGRC1M027SBEA,Personal consumption expenditures: Energy goods and services,19,Monthly
+CCUSMA02DEM618N,Currency Conversions: US Dollar Exchange Rate: Average of Daily Rates: National Currency: USD for Germany,19,Monthly
+NAEXKP01NZQ189S,National Accounts: GDP by Expenditure: Constant Prices: Gross Domestic Product: Total for New Zealand,19,Quarterly
+NYWTOT,Total Wages and Salaries in New York,19,Quarterly
+W055RC1,Personal current taxes,19,Monthly
+MEDLISPRIPERSQUFEETX,Housing Inventory: Median Listing Price per Square Feet in Texas,19,Monthly
+IRNNGDPMOMBD,"Crude Oil Production for Iran, Islamic Republic of",19,Annual
+IRSTCI01KRM156N,Interest Rates: Immediate Rates (< 24 Hours): Call Money/Interbank Rate: Total for Korea,19,Monthly
+IRLTLT01RUM156N,Interest Rates: Long-Term Government Bond Yields: 10-Year: Main (Including Benchmark) for Russia,19,Monthly
+MEDLISPRI19740,"Housing Inventory: Median Listing Price in Denver-Aurora-Lakewood, CO (CBSA)",19,Monthly
+INVCMRMT,Real Manufacturing and Trade Inventories,19,Monthly
+HBPIGDQ188S,Federal Debt Held by Private Investors as Percent of Gross Domestic Product,19,Quarterly
+AREDGDPGDPPT,Total External Debt for United Arab Emirates,19,Annual
+INDBCAGDPBP6PT,Balance of Payments: Total Net Current Account for India,19,Annual
+NC000349Q,Personal Consumption Expenditures,19,Quarterly
+MEDLISPRI39580,"Housing Inventory: Median Listing Price in Raleigh, NC (CBSA)",19,Monthly
+VANGSP,Gross Domestic Product: All Industry Total in Virginia,19,Annual
+NGMP39580,"Total Gross Domestic Product for Raleigh, NC (MSA)",19,Annual
+INDGDPRQPSMEI,National Accounts: GDP by Expenditure: Constant Prices: Gross Domestic Product: Total for India,19,Quarterly
+FULLREMOTECURR,All Full-Time Wage and Salary Workers: Working Fully Remote,19,Monthly
+LFWA64TTDEQ647S,Infra-Annual Labor Statistics: Working-Age Population Total: From 15 to 64 Years for Germany,19,Quarterly
+FSDP,Final Sales to Domestic Purchasers,19,Quarterly
+NGMP35380,"Total Gross Domestic Product for New Orleans-Metairie, LA (MSA)",19,Annual
+CHNLORSGPNOSTSAM,Composite Leading Indicators: Reference Series (GDP) Normalized for China,19,Monthly

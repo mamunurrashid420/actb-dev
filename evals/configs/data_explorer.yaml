@@ -1,0 +1,27 @@
+# Data Explorer Evaluation Configuration
+name: data_explorer_eval
+description: DataExplorer evaluation suite
+
+agent: agents.data_explorer:DataExplorer
+
+prompts:
+  - py://agents.data_explorer.agent:DEFAULT_PROMPT
+
+models:
+  - google:gemini-3-flash-preview
+
+dataset: data_explorer
+
+# Experiment-level assertions (apply to ALL test cases)
+assert:
+  - type: not-null
+    field: recommended_asset
+  - type: latency-budget
+    max_seconds: 15
+
+fixtures:
+  tools: fixtures/tools/data_explorer.yaml
+
+tags:
+  - data_exploration
+  - discovery

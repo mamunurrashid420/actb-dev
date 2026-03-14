@@ -1,0 +1,77 @@
+# Unified pre-commit configuration for actBI monorepo
+# Hooks run selectively based on which files are staged
+#
+# Install: uv tool install pre-commit && pre-commit install
+# Run all: pre-commit run --all-files
+# Run one: pre-commit run <hook-id>
+
+repos:
+  # === JavaScript/TypeScript (web/) ===
+  - repo: local
+    hooks:
+      - id: eslint-admin
+        name: eslint (web/admin)
+        entry: bash -c 'cd web/admin && npx eslint --fix $(echo "$@" | sed "s|web/admin/||g")' --
+        language: system
+        files: ^web/admin/.*\.(js|ts|jsx|tsx)$
+        pass_filenames: true
+
+      - id: eslint-bi
+        name: eslint (web/bi)
+        entry: bash -c 'cd web/bi && npx eslint --fix $(echo "$@" | sed "s|web/bi/||g")' --
+        language: system
+        files: ^web/bi/.*\.(js|ts|jsx|tsx)$
+        pass_filenames: true
+
+      - id: eslint-xms
+        name: eslint (web/xms)
+        entry: bash -c 'cd web/xms && npx eslint --fix $(echo "$@" | sed "s|web/xms/||g")' --
+        language: system
+        files: ^web/xms/.*\.(js|ts|jsx|tsx)$
+        pass_filenames: true
+
+      - id: prettier
+        name: prettier (web)
+        entry: npx prettier --write
+        language: system
+        files: ^web/.*\.(js|ts|jsx|tsx|json|css|md)$
+
+  # === Python linting and formatting ===
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.10
+    hooks:
+      - id: ruff
+        name: ruff lint (python)
+        args: [--fix]
+        files: ^(agents|notebooks|evals|lib|pipelines|service|xlake)/.*\.py$
+
+      - id: ruff-format
+        name: ruff format (python)
+        files: ^(agents|notebooks|evals|lib|pipelines|service|xlake)/.*\.py$
+
+  # === Python tests (only when Python files change) ===
+  - repo: local
+    hooks:
+      - id: pytest-lib
+        name: pytest (lib)
+        entry: bash -c 'uv run pytest lib/io/tests lib/data/tests -n auto -q'
+        language: system
+        files: ^lib/.*\.py$
+        pass_filenames: false
+
+  # === Dagster validation (when pipeline code changes) ===
+  - repo: local
+    hooks:
+      - id: dagster-check
+        name: dagster check definitions
+        entry: bash -c 'cd pipelines && PYTHONPATH=src uv run dagster definitions validate -m pipelines.definitions'
+        language: system
+        files: ^pipelines/.*\.py$
+        pass_filenames: false
+
+      - id: generate-dagster-docs
+        name: generate asset catalog
+        entry: bash -c 'cd pipelines && PYTHONPATH=src uv run python scripts/generate_docs.py && git add docs/generated/'
+        language: system
+        files: ^pipelines/src/pipelines/assets/.*\.py$
+        pass_filenames: false

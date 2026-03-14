@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Post-merge hook: regenerate protos if .proto files changed
+# Install: cp scripts/post-merge .git/hooks/post-merge && chmod +x .git/hooks/post-merge
+
+set -e
+
+# Check if any .proto files changed in this merge
+if git diff --name-only HEAD@{1} HEAD | grep -q '\.proto$'; then
+    echo "Proto files changed, regenerating..."
+    cd data/xlake && uv run python scripts/compile_protos.py
+    echo "Proto generation complete."
+fi

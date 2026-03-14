@@ -1,0 +1,112 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "actions": "Actions",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close",
+    "export": "Export",
+    "viewFullReport": "View Full Report",
+    "downloadCsv": "Download CSV"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "email": "Email",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "invalidEmail": "Please enter a valid email address.",
+    "passwordMin": "Password must be at least 6 characters.",
+    "rememberMe": "Remember me for 30 days",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "loginTitle": "Login to your account",
+    "loginSubtitle": "Please enter your details to login.",
+    "orContinueWith": "Or continue with",
+    "signingIn": "Signing in...",
+    "loginFailed": "Login failed",
+    "loginSuccess": "Login successful!",
+    "redirecting": "You are being redirected to the dashboard.",
+    "unexpectedError": "An unexpected error occurred. Please try again.",
+    "demoAccounts": "Quick demo login",
+    "demoAccountsDesc": "Pick a role to auto-fill credentials. Click submit to login.",
+    "fill": "Fill",
+    "demo": "demo"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "admin": "Admin",
+    "charts": "Charts",
+    "finance": "Finance"
+  },
+  "sidebar": {
+    "quickCreate": "Quick Create",
+    "inbox": "Inbox",
+    "groups": {
+      "dashboards": "Dashboards",
+      "admin": "Admin"
+    },
+    "items": {
+      "default": "Default",
+      "connections": "Connections",
+      "profile": "Profile",
+      "tenants": "Tenants",
+      "users": "Users",
+      "access": "Roles & Permissions"
+    },
+    "soon": "Soon"
+  },
+  "user": {
+    "profile": "Profile",
+    "billing": "Billing",
+    "notifications": "Notifications",
+    "logOut": "Log out"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "overview": "Overview",
+    "recentActivity": "Recent Activity",
+    "newLeads": "New Leads",
+    "lastMonth": "Last Month",
+    "proposalsSent": "Proposals Sent",
+    "revenue": "Revenue",
+    "last6Months": "Last 6 Months",
+    "projectsWon": "Projects Won",
+    "revenueGrowth": "Revenue Growth",
+    "yearToDate": "Year to Date (YTD)",
+    "growthSinceLastYear": "+35% growth since last year",
+    "leadsBySource": "Leads by Source",
+    "leads": "Leads",
+    "projectRevenueVsTarget": "Project Revenue vs. Target",
+    "averageProgress": "Average progress: 78% · 2 projects above target",
+    "salesPipeline": "Sales Pipeline",
+    "leadsIncreasedBy": "Leads increased by 18.2% since last month.",
+    "salesByRegion": "Sales by Region",
+    "regionsTracked": "{count} regions tracked",
+    "regionsGrowing": "{count} regions growing",
+    "actionItems": "Action Items",
+    "recentLeads": "Recent Leads",
+    "recentLeadsDesc": "Track and manage your latest leads and their status.",
+    "priority": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    }
+  }
+}

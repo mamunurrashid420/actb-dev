@@ -1,0 +1,30 @@
+# Dagster configuration for dev environment (Supabase Postgres)
+# Use this with DAGSTER_HOME=.dagster-dev for shared metadata storage
+
+storage:
+  postgres:
+    postgres_db:
+      username:
+        env: DAGSTER_PG_USERNAME
+      password:
+        env: DAGSTER_PG_PASSWORD
+      hostname:
+        env: DAGSTER_PG_HOST
+      db_name:
+        env: DAGSTER_PG_DB
+      port: 5432
+      params:
+        options: -c search_path=dagster_dev
+
+run_coordinator:
+  module: dagster.core.run_coordinator
+  class: QueuedRunCoordinator
+
+# Concurrency pools for API rate limiting
+# Pool limits are enforced at the op level (not run level)
+# Individual pool limits (sec_api, fred_api, etc.) are set via CLI:
+#   dagster instance concurrency set sec_api 1
+#   dagster instance concurrency set fred_api 2
+concurrency:
+  pools:
+    default_limit: 2

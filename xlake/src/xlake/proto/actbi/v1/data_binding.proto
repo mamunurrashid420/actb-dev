@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package actbi.v1;
+
+// DataSource: Reference to a data source in the data lake.
+message DataSource {
+  // System identifier (e.g., "customer_datalake")
+  string system = 1;
+  // Table name within the system
+  string table = 2;
+}
+
+// LogicalFilter: Declarative filter condition.
+message LogicalFilter {
+  string field = 1;
+  string operator = 2;
+  string value = 3;
+}
+
+// Projection: Field selection with optional aliasing.
+message Projection {
+  // Source field name
+  string field = 1;
+  // Output alias (optional)
+  string alias = 2;
+}
+
+// DataBinding: Declares what data is needed, not how it is executed.
+// This artifact is SQL / ibis agnostic.
+message DataBinding {
+  string id = 1;
+  uint32 version = 2;
+
+  repeated DataSource sources = 3;
+  repeated LogicalFilter filters = 4;
+  repeated Projection projections = 5;
+
+  uint32 schema_version = 6;
+}
+

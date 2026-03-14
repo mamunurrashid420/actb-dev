@@ -1,0 +1,122 @@
+syntax = "proto3";
+
+package actbi.v1;
+
+// Chart type enum — single source of truth for all chart types.
+// Values use lowercase snake_case matching the data-viz-bible taxonomy.
+// Organized by priority level (P0 core, P1 extended, P2 specialized).
+enum ChartType {
+  unspecified = 0;
+  // P0 — Core (Always Available)
+  kpi_card = 1;
+  data_table = 2;
+  bar_chart_vertical = 3;
+  bar_chart_horizontal = 4;
+  line_chart = 5;
+  area_chart = 6;
+  scatter_plot = 7;
+  pie_chart = 8;
+  donut_chart = 9;
+  // P1 — Extended
+  bar_chart_stacked = 10;
+  bar_chart_grouped = 11;
+  histogram = 12;
+  heatmap = 13;
+  treemap = 14;
+  boxplot = 15;
+  slope_chart = 16;
+  // P2 — Specialized
+  waterfall_chart = 17;
+  cohort_heatmap = 18;
+  combo = 19;
+  violin_plot = 20;
+  bullet_chart = 21;
+  funnel_chart = 22;
+  bubble_chart = 23;
+  lollipop_chart = 24;
+}
+
+// Filter applied to chart data.
+message Filter {
+  string field = 1;
+  string operator = 2;
+  string value = 3;
+}
+
+// Dimension definition for a chart axis or grouping.
+message Dimension {
+  string field = 1;
+  // Type of dimension: "time", "category", "numeric"
+  string type = 2;
+}
+
+// Data mapping from schema fields to chart dimensions.
+// Specifies how data fields are mapped to visual chart dimensions.
+// This is structural (positioning), not semantic (meaning).
+message DataMapping {
+  string x_axis = 1;    // Field for X-axis (time, category, or numeric)
+  string y_axis = 2;    // Field for Y-axis (numeric, or category for horizontal bars)
+  string group_by = 3;  // Field to group by for creating series (long-format data)
+  string value = 4;     // Primary value field (for KPI, pie, treemap)
+  string row = 5;       // Field for grid rows (heatmaps)
+  string column = 6;    // Field for grid columns (heatmaps)
+}
+
+// Value range for value-based styling (heatmaps, choropleths, gauges).
+// Points within this range share the same styling.
+message ValueRange {
+  double min = 1;
+  double max = 2;
+}
+
+// Classification for a data series (agent decision).
+// Semantic metadata that the UI maps to visual styles.
+//
+// "Series" means: "A group of data points sharing the same styling rules"
+// Three ways to identify which data points belong to a series:
+// - field: column name (wide-format data)
+// - group_value: value in group_by field (long-format data)
+// - value_range: numeric range (value-based styling)
+message DataSeriesClassification {
+  string series_id = 1;    // Unique identifier for this series
+
+  // Reference - HOW to identify this series in the data
+  string field = 2;        // For wide-format data (column name, e.g., "revenue")
+  string group_value = 3;  // For long-format data (value in group_by field, e.g., "Product A")
+
+  // Semantic classifications (agent decisions)
+  string prominence = 4;   // hide | background | baseline | secondary | primary | callout
+  string purpose = 5;      // data-focus | data-comparison | data-projection
+  string sentiment = 6;    // positive | negative | neutral | warning (optional)
+
+  // Display
+  string label = 7;        // Human-readable label for legend/tooltip
+
+  // For value-based styling (heatmaps, choropleths)
+  ValueRange value_range = 8;
+}
+
+// Chart specification defining how data should be interpreted and rendered.
+message Chart {
+  string id = 1;
+  string title = 2;
+  ChartType chart_type = 3;
+
+  repeated Dimension dimensions = 4;
+  repeated Filter filters = 5;
+
+  // References to materialized data
+  repeated string chart_data_slice_ids = 6;
+
+  uint32 version = 7;
+  uint32 schema_version = 8;
+
+  // Semantic metadata from agent
+  DataMapping data_mapping = 9;
+  repeated DataSeriesClassification data_series = 10;
+
+  // For combo charts: each sub-chart is a full Chart spec.
+  // Sub-charts inherit parent's chart_data_slice_ids if their own is empty.
+  repeated Chart sub_charts = 11;
+}
+
